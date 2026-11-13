@@ -1,0 +1,76 @@
+html:has(.ul),
+body:has(.ul) {
+  height: auto;
+  overflow: auto;
+}
+
+.ul {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+  background: var(--canvas);
+}
+
+.ul-card {
+  display: grid;
+  gap: 14px;
+  width: min(420px, 100%);
+  padding: 32px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--card);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.03);
+}
+
+.ul-card .gs-lockup {
+  font-size: 18px;
+}
+
+.ul-card .gs-lockup img {
+  height: 24px;
+}
+
+.ul-card h1 {
+  margin: 14px 0 0;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.ul-card p {
+  margin: 0;
+  color: var(--ink-80);
+  line-height: 1.45;
+}
+
+.ul-card input {
+  height: 52px;
+  padding: 0 16px;
+  border: 1px solid var(--ink);
+  border-radius: var(--r);
+  font: inherit;
+  font-size: 16px;
+}
+
+.ul-card button {
+  height: 52px;
+  border: 0;
+  border-radius: var(--r);
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--font-ui), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ul-card input:focus-visible,
+.ul-card button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.ul-wrong {
+  color: #8b1e1e !important;
+}

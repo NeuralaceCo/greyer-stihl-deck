@@ -1,0 +1,71 @@
+{
+  "note": "Greyer x STIHL jobsite photos. nano_banana_2_1, 2k, thinking high, 2 cr each. Refs: b5a4e149 studio front, 20152009 worn side, d9179144 module macro, 23b956b4 worn front (uploaded 2026-11-13). Index = shot*10 + candidate.",
+  "approved_ceiling_credits": 58,
+  "batches": [
+    {
+      "submitted": "2026-11-13",
+      "credits": 24,
+      "jobs": {
+        "11": "bdd5f8e2-70b7-4fe5-9fd3-d70fdf500c11",
+        "12": "a9f23b7a-f1a4-44b2-bc54-0279fb5a6eb5",
+        "13": "08775590-d366-459e-a6a4-68f0bed833fa",
+        "21": "1af16007-657e-403d-95a1-2f890bdc5b59",
+        "22": "aececcc3-6b4c-441f-8f47-0e68a01e7a7e",
+        "23": "52c02fb8-da12-4120-ab30-898cedef2e43",
+        "31": "d53277f6-5165-4b08-963a-3991d7d570a7",
+        "32": "08e44fa7-22e1-4507-a543-c22049bc13bb",
+        "33": "bb940971-17cc-49ff-8c62-11f748fe64a7",
+        "41": "ebd54dbf-3081-485a-b7a2-f90692cac74d",
+        "42": "2c6a9226-6c93-4d39-abb0-2b86756f6295",
+        "43": "2bc73016-b968-4c3d-b268-c5e508bc63eb"
+      }
+    },
+    {
+      "submitted": "2026-11-13",
+      "credits": 18,
+      "jobs": {
+        "51": "4baae8a5-32d1-45e5-8756-66fccf1ff07b",
+        "52": "9784d83c-4d3b-49f3-b955-96cfaf50f525",
+        "53": "f1de9dcb-e9a8-4808-b6d5-6129504ebbfc",
+        "61": "63212b24-839d-44d1-86f3-658af8219fee",
+        "62": "bd00aeb5-5c28-42d3-9ff1-8186b2f69e3d",
+        "63": "482674d5-e4f5-4c2c-81f4-0f2d1fe487d0",
+        "71": "575ca522-84bd-4393-8ab5-19b077e608a1",
+        "72": "59744daf-19be-4070-919d-3f7da155764d",
+        "73": "02a3ef64-55e8-4a57-8c01-c6b24b52fbc6"
+      }
+    }
+  ],
+  "picks": {
+    "p1": "11",
+    "p2": "21",
+    "p3": "31",
+    "p4": "43",
+    "p5": "51",
+    "p6": "62",
+    "p7": "72"
+  },
+  "why": {
+    "12": "chest patch on the jacket",
+    "13": "orange part on the trimmer",
+    "61": "right-hand-drive cab",
+    "63": "readable JOB SHEET text",
+    "71": "red/orange machines on the shelves",
+    "73": "orange on the top shelf"
+  },
+  "redos": 0,
+  "total_credits": 42,
+  "finish": "Crops baked per slot, shared grade: curves lift 0.035, vignette 0.32, noise 3; WebP q82 in public/media/photos. No delogo needed.",
+  "cap": {
+    "note": "Brand/vision slides, requested 2026-11-13: cap on graphite (A) then STIHL-colour crew edition (B).",
+    "jobs": {
+      "A1": "f53efa0b-a274-47ec-8291-74c0f3989683",
+      "A2": "c0f27fd5-8922-4af6-94eb-7c62d6b21475",
+      "B1": "db802874-f745-4ede-819b-c1e6b55f855b",
+      "B2": "59f1fc2d-105f-4653-a3de-e422b13771dd",
+      "B3": "ce6350c5-350c-44ba-bfd8-fb2509217394"
+    },
+    "credits": 10,
+    "pickA": "A1 f53efa0b"
+  }
+}

@@ -1,0 +1,361 @@
+/* The look board scrolls, unlike the deck. Sizes here are ordinary page pixels. */
+html:has(.bd),
+body:has(.bd) {
+  height: auto;
+  overflow: auto;
+}
+
+.bd {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.bd-head {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.bd-head .gs-lockup {
+  font-size: 20px;
+}
+
+.bd-head .gs-lockup img {
+  height: 26px;
+}
+
+.bd-eyebrow {
+  margin: 0 0 14px;
+  font-family: var(--font-mono), monospace;
+  font-size: 15px;
+  color: var(--ink-60);
+}
+
+.bd-head h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(36px, 4.6vw, 60px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: var(--track-display);
+}
+
+.bd-lead {
+  max-width: 760px;
+  margin: 22px 0 0;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink-80);
+}
+
+.bd-open {
+  display: inline-flex;
+  align-items: center;
+  height: 51px;
+  margin-top: 26px;
+  padding: 0 24px;
+  border-radius: var(--r);
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--font-ui), sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color var(--t-ui) var(--ease-ui);
+}
+
+.bd-open:hover {
+  background: #484848;
+}
+
+.bd-open:focus-visible,
+.bd-reset:focus-visible,
+.bd button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.bd-sec {
+  padding: 56px 0 8px;
+}
+
+.bd-sec > h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+}
+
+.bd-note {
+  max-width: 760px;
+  margin: 0 0 24px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-80);
+}
+
+.bd h3 {
+  margin: 0 0 14px;
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-60);
+}
+
+/* ---------- Slides ---------- */
+
+.bd-slides {
+  display: grid;
+  gap: 40px;
+}
+
+.bd-slide {
+  margin: 0;
+}
+
+.bd-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--canvas);
+}
+
+.bd-frame[data-kind="dark"] {
+  background: var(--graphite);
+}
+
+.bd-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+}
+
+.bd-chrome {
+  position: absolute;
+  left: 96px;
+  right: 96px;
+  top: 52px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bd-slide > figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+  font-family: var(--font-mono), monospace;
+  font-size: 14px;
+  color: var(--ink-60);
+}
+
+.bd-reset {
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r);
+  background: var(--card);
+  font-family: var(--font-ui), sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ---------- Colour ---------- */
+
+.bd-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.bd-swatches {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bd-swatches li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 14px;
+  align-items: center;
+}
+
+.bd-chip {
+  grid-row: 1 / 4;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r);
+}
+
+.bd-chip[data-line="true"] {
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.bd-swatches b {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bd-swatches code {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--ink-80);
+}
+
+.bd-swatches small {
+  font-size: 13px;
+  color: var(--ink-60);
+}
+
+/* ---------- Type ---------- */
+
+.bd-type {
+  display: grid;
+  gap: 0;
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.bd-spec {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.bd-spec small {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--ink-60);
+}
+
+.bd-spec p {
+  margin: 0;
+}
+
+.bd-spec-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.bd-display {
+  font-size: clamp(40px, 6vw, 84px);
+  line-height: 0.98;
+  letter-spacing: var(--track-display);
+}
+
+.bd-h {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1;
+  letter-spacing: var(--track-display);
+}
+
+.bd-b {
+  max-width: 820px;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--ink-80);
+}
+
+.bd-m {
+  font-family: var(--font-mono), monospace;
+  font-size: 18px;
+}
+
+.bd-u {
+  display: flex;
+  gap: 10px;
+}
+
+.bd-u .gs-btn {
+  height: 44px;
+  font-size: 16px;
+  cursor: default;
+}
+
+/* ---------- States ---------- */
+
+.bd-states {
+  display: grid;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--card);
+}
+
+.bd-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.bd-states .gs-state {
+  height: 34px;
+  font-size: 14px;
+}
+
+.bd-states .gs-wave {
+  width: 40px;
+  height: 40px;
+}
+
+.bd-states .gs-wave i {
+  height: 15px;
+}
+
+.bd-states .gs-sent {
+  font-size: 14px;
+}
+
+.bd-states .gs-tag {
+  height: 28px;
+  font-size: 13px;
+}
+
+.bd-states .gs-lang {
+  font-size: 13px;
+  vertical-align: 0;
+}
+
+.bd-arrow {
+  color: var(--ink-60);
+}
+
+.bd-foot {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink-80);
+}
+
+@media (max-width: 640px) {
+  .bd {
+    padding: 24px 16px 56px;
+  }
+}

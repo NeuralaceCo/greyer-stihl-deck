@@ -1,0 +1,629 @@
+/* Greyer (Alia) × STIHL Commercial deck. Greyer-led and neutral: Greyer's canvas, one ink, Asta Sans,
+   Geist Mono for facts. STIHL appears only as its name. Everything inside .dk-stage sits on a fixed
+   1920 x 1080 frame that scales to the screen, so sizes below are stage pixels. */
+
+:root {
+  /* Surfaces and ink (greyer.com) */
+  --canvas: #f8f8f8;
+  --card: #ffffff;
+  --ink: #282828;
+  --ink-80: rgba(40, 40, 40, 0.8);
+  --ink-60: rgba(33, 33, 33, 0.62);
+  --line: rgba(40, 40, 40, 0.12);
+  --line-strong: rgba(40, 40, 40, 0.24);
+  --mist: #e2e8ef;
+  --mist-ink: #3c4a5c;
+  --mist-line: #9fb0c4;
+
+  /* Dark slides (Greyer concept "Lab") */
+  --graphite: #141516;
+  --carbon: #222426;
+  --slate: #3a3d40;
+  --bone: #f7f6f2;
+  --bone-80: rgba(247, 246, 242, 0.8);
+  --bone-60: rgba(247, 246, 242, 0.62);
+  --line-dark: rgba(247, 246, 242, 0.16);
+
+  /* States. Signal only ever means Alia is listening or speaking. */
+  --signal: #e4f05a;
+  --signal-ink: #3d420b;
+  --ok: #0ca352;
+  --ok-soft: #e3f4ea;
+  --ok-ink: #06713a;
+
+  /* Shape and motion */
+  --r: 12px;
+  --r-bubble: 22px;
+  --r-pill: 40px;
+  --ease-ui: cubic-bezier(0.44, 0, 0.56, 1);
+  --ease-reveal: cubic-bezier(0.12, 0.23, 0.17, 0.99);
+  --t-ui: 0.4s;
+
+  /* Type (stage pixels) */
+  --fs-display: 112px;
+  --fs-h1: 84px;
+  --fs-stat: 300px;
+  --fs-lead: 34px;
+  --fs-body: 28px;
+  --fs-bubble: 26px;
+  --fs-small: 21px;
+  --fs-label: 20px;
+  --fs-mono: 22px;
+  --fs-tag: 16px;
+  --track-display: -0.04em;
+  --features: "cv03", "cv04", "cv09", "cv11";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: var(--features);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+/* ---------- Frame ---------- */
+
+.dk {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--canvas);
+  transition: background-color 0.7s var(--ease-ui);
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: pan-y pinch-zoom;
+}
+
+.dk[data-tone="dark"] {
+  background: var(--graphite);
+}
+
+.dk-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1920px;
+  height: 1080px;
+  margin: -540px 0 0 -960px;
+  transform: scale(var(--s, 1));
+}
+
+.dk-slide {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.dk button:focus-visible,
+.dk a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+[data-kind="dark"] button:focus-visible,
+.dk[data-tone="dark"] .dk-top button:focus-visible {
+  outline-color: var(--bone);
+}
+
+/* ---------- Chrome ---------- */
+
+.dk-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  height: 4px;
+  transform-origin: 0 50%;
+  background: var(--ink);
+  transition: transform 0.9s var(--ease-reveal), background-color 0.7s;
+}
+
+.dk[data-tone="dark"] .dk-progress {
+  background: var(--bone);
+}
+
+.dk-top {
+  position: absolute;
+  left: 96px;
+  right: 96px;
+  top: 52px;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  color: var(--ink);
+  transition: color 0.7s;
+}
+
+.dk[data-tone="dark"] .dk-top {
+  color: var(--bone);
+}
+
+/* The lockup: Greyer's wordmark, a thin ×, and STIHL as plain text in our own type. No STIHL logo. */
+.gs-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: inherit;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.gs-lockup img {
+  display: block;
+  width: auto;
+  height: 30px;
+  transition: filter 0.7s;
+}
+
+[data-kind="dark"] .gs-lockup img,
+.dk[data-tone="dark"] .gs-lockup img {
+  filter: invert(1) brightness(1.2);
+}
+
+.gs-lockup i {
+  font-style: normal;
+  opacity: 0.5;
+}
+
+.gs-lockup b {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.dk-rail {
+  display: flex;
+  gap: 6px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  transition: border-color 0.7s;
+}
+
+.dk[data-tone="dark"] .dk-rail {
+  border-color: var(--line-dark);
+}
+
+.dk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: none;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color var(--t-ui) var(--ease-ui), color var(--t-ui) var(--ease-ui);
+}
+
+.dk-chip span {
+  font-family: var(--font-mono), monospace;
+  font-size: 15px;
+  opacity: 0.55;
+}
+
+.dk-chip:hover {
+  background: rgba(40, 40, 40, 0.06);
+}
+
+.dk[data-tone="dark"] .dk-chip:hover {
+  background: rgba(247, 246, 242, 0.08);
+}
+
+.dk-chip[aria-current="true"] {
+  background: var(--ink);
+  color: var(--bone);
+}
+
+.dk[data-tone="dark"] .dk-chip[aria-current="true"] {
+  background: var(--bone);
+  color: var(--graphite);
+}
+
+.dk-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.dk-count {
+  margin-right: 8px;
+  font-family: var(--font-mono), monospace;
+  font-size: 19px;
+  font-variant-numeric: tabular-nums;
+}
+
+.dk-count i {
+  font-style: normal;
+  opacity: 0.5;
+}
+
+.dk-btn {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  transition: background-color var(--t-ui) var(--ease-ui), border-color 0.7s;
+}
+
+.dk[data-tone="dark"] .dk-btn {
+  border-color: var(--line-dark);
+}
+
+.dk-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dk-btn:hover:not(:disabled) {
+  background: rgba(40, 40, 40, 0.06);
+}
+
+.dk[data-tone="dark"] .dk-btn:hover:not(:disabled) {
+  background: rgba(247, 246, 242, 0.1);
+}
+
+.dk-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ---------- Coach notes and likely questions (outside the scaled stage) ---------- */
+
+.dk-coach {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 20;
+  width: min(580px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  padding: 20px 24px 16px;
+  border-radius: 16px;
+  background: rgba(20, 21, 22, 0.95);
+  color: var(--bone);
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity 0.4s, transform 0.5s var(--ease-reveal);
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.dk-coach[data-open="true"] {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
+.dk-coach p {
+  margin: 0 0 10px;
+}
+
+.dk-coach em {
+  display: block;
+  color: var(--signal);
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-style: normal;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dk-coach-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.dk-coach-head span {
+  opacity: 0.6;
+}
+
+.dk-keys {
+  margin: 4px 0 0 !important;
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+.dk-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 21;
+  width: min(520px, 92vw);
+  overflow: auto;
+  padding: 30px 30px 40px;
+  background: var(--card);
+  box-shadow: -40px 0 80px -40px rgba(20, 21, 22, 0.45);
+  /* Far enough out that the shadow doesn't show at the screen edge while closed. */
+  transform: translateX(calc(100% + 160px));
+  transition: transform 0.6s var(--ease-reveal);
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.dk-drawer[data-open="true"] {
+  transform: none;
+}
+
+.dk-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dk-drawer-head h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: var(--track-display);
+}
+
+.dk-x {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.dk-obj {
+  border-top: 1px solid var(--mist);
+}
+
+.dk-obj summary {
+  padding: 18px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dk-obj p {
+  margin: 0 0 18px;
+  color: var(--ink-80);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* ---------- Touch screens ---------- */
+
+.dk-touch {
+  display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .dk-nav .dk-btn {
+    display: none;
+  }
+
+  .dk-touch {
+    position: fixed;
+    left: 50%;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 7px;
+    border-radius: 999px;
+    background: rgba(20, 21, 22, 0.86);
+    color: var(--bone);
+    box-shadow: 0 14px 32px -14px rgba(20, 21, 22, 0.6);
+    transform: translateX(-50%);
+  }
+
+  .dk-tbtn {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(247, 246, 242, 0.14);
+    color: var(--bone);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .dk-tbtn:disabled {
+    opacity: 0.3;
+  }
+
+  .dk-tbtn svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .dk-tcount {
+    display: grid;
+    justify-items: center;
+    min-width: 96px;
+    font-family: var(--font-mono), monospace;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .dk-tcount i {
+    font-style: normal;
+    opacity: 0.55;
+  }
+
+  .dk-tcount small {
+    max-width: 140px;
+    overflow: hidden;
+    font-family: var(--font-sans), sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- Shared slide type ---------- */
+
+[data-kind="light"] {
+  color: var(--ink);
+}
+
+[data-kind="dark"] {
+  color: var(--bone);
+}
+
+.gs-kicker {
+  margin: 0 0 22px;
+  font-family: var(--font-mono), monospace;
+  font-size: var(--fs-mono);
+  line-height: 1.3;
+  color: var(--ink-80);
+}
+
+[data-kind="dark"] .gs-kicker {
+  color: var(--bone-60);
+}
+
+.gs-title {
+  margin: 0;
+  font-size: var(--fs-h1);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: var(--track-display);
+  text-wrap: balance;
+}
+
+.gs-tline {
+  display: block;
+}
+
+.dk-word {
+  display: inline-block;
+}
+
+.gs-body {
+  margin: 28px 0 0;
+  max-width: 820px;
+  font-size: var(--fs-body);
+  line-height: 1.42;
+  color: var(--ink-80);
+  text-wrap: pretty;
+}
+
+[data-kind="dark"] .gs-body {
+  color: var(--bone-80);
+}
+
+.gs-small {
+  margin: 0;
+  max-width: 900px;
+  font-size: var(--fs-small);
+  line-height: 1.45;
+  color: var(--ink-60);
+  text-wrap: pretty;
+}
+
+[data-kind="dark"] .gs-small {
+  color: var(--bone-60);
+}
+
+/* A photo still to be made: a hatched panel that says what the shot is. */
+.gs-photo {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  border-radius: var(--r);
+  background-color: #dfe3e8;
+  background-image: repeating-linear-gradient(135deg, transparent 0 18px, rgba(40, 40, 40, 0.05) 18px 19px);
+}
+
+[data-kind="dark"] .gs-photo {
+  background-color: var(--carbon);
+  background-image: repeating-linear-gradient(135deg, transparent 0 18px, rgba(247, 246, 242, 0.04) 18px 19px);
+}
+
+.gs-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gs-photo figcaption {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 24px;
+  font-family: var(--font-mono), monospace;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--ink-60);
+}
+
+.gs-photo figcaption b {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  color: var(--ink-80);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+[data-kind="dark"] .gs-photo figcaption {
+  color: var(--bone-60);
+}
+
+[data-kind="dark"] .gs-photo figcaption b {
+  color: var(--bone-80);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dk,
+  .dk-progress,
+  .dk-chip {
+    transition: none;
+  }
+}

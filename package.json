@@ -1,0 +1,26 @@
+{
+  "name": "greyer-stihl-deck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3192",
+    "build": "next build",
+    "start": "next start -p 3192",
+    "script": "node scripts/export-script.ts",
+    "check": "node scripts/export-script.ts --check"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.1",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.vercel
+.env*
+*.tsbuildinfo
+next-env.d.ts
+.check-touch
+.dev-store
+docs/*.pdf
+design/photos/candidates/
+design/photos/review/
