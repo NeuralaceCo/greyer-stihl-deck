@@ -30,6 +30,8 @@ export type Mock =
   | { type: "brand"; ring: string; tag: string }
   /* Slide 2: the cap becomes a crew edition, then the camera goes to the ear piece. */
   | { type: "vision"; callouts: { label: string; text: string }[]; tag: string }
+  /* Slide 3: who we are, in two numbers. */
+  | { type: "about"; stats: { value: string; label: string }[] }
   | { type: "roles"; centre: string; roles: string[] }
   | { type: "proof"; stat: string; of: string; names: { name: string; business: string }[] }
   | { type: "fragments"; items: { time: string; channel: Channel; lang?: Lang; from?: string; text: string; status: string }[] }
@@ -155,9 +157,34 @@ export const SLIDES: Slide[] = [
   },
   {
     n: 3,
+    id: "about",
+    title: "About Greyer — $100K in revenue, built for people who work on site",
+    kind: "dark",
+    chapter: 0,
+    takeaway: "Greyer already earns revenue, and most of its substantial commercial buyers are on-site businesses, the same kind of crews STIHL equips.",
+    copy: {
+      kicker: "About Greyer",
+      headline: "Built for people who work on site.",
+      body: "Most of our substantial commercial buyers build, pave, paint, wire or heat buildings. STIHL equips crews like theirs through Pro Dealers.",
+    },
+    visual:
+      "Dark slide on the silk. Headline top left. Two large figures side by side: $100K (in revenue) and 64% (of substantial commercial buyers are construction-related), the numbers in STIHL orange with mono labels. The body under them, the small print at the bottom.",
+    mock: {
+      type: "about",
+      stats: [
+        { value: "$100K", label: "in revenue" },
+        { value: "64%", label: "of substantial commercial buyers are construction-related" },
+      ],
+    },
+    notes:
+      "A word about us. Greyer has done a hundred thousand dollars in revenue. When we looked at who our substantial commercial buyers are, most of them work on site: custom homes, steel, paving, painting, HVAC, a utility. Those are the crews your Pro Dealers already serve, which is why we wanted to start this conversation with STIHL.",
+    small: "Revenue as reported by Greyer. Buyer mix: 7 of 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Not independently verified.",
+  },
+  {
+    n: 4,
     id: "customer",
     title: "Shared customer — The person running the crew is also running the office",
-    kind: "light",
+    kind: "dark",
     chapter: 0,
     takeaway: "STIHL's pro customer and Greyer's buyers meet in one person: the lead who works the job and also runs its office.",
     copy: {
@@ -176,10 +203,10 @@ export const SLIDES: Slide[] = [
       "On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's exactly what the pilot would test.",
   },
   {
-    n: 4,
+    n: 5,
     id: "proof",
     title: "Proof — 7 of 11 substantial commercial buyers are construction-related",
-    kind: "light",
+    kind: "dark",
     chapter: 0,
     takeaway: "Most of Greyer's substantial commercial buyers are building, sitework, energy or utility firms, which overlaps with the construction and utility customers STIHL serves through Pro Dealers.",
     copy: {
@@ -209,7 +236,7 @@ export const SLIDES: Slide[] = [
       "Base: 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Customer details are supplied by Greyer and not independently verified.",
   },
   {
-    n: 5,
+    n: 6,
     id: "wasted-hour",
     title: "The wasted hour — The job ends. The office starts.",
     kind: "dark",
@@ -237,10 +264,10 @@ export const SLIDES: Slide[] = [
     small: "“The wasted hour” is a label for scattered after-hours admin, not a measured figure.",
   },
   {
-    n: 6,
+    n: 7,
     id: "greyer",
     title: "What Greyer is — Say it once. Review what comes next.",
-    kind: "light",
+    kind: "dark",
     chapter: 1,
     takeaway: "Greyer turns one spoken request into a draft the lead reviews and approves, through the channels crews already use.",
     copy: {
@@ -264,10 +291,10 @@ export const SLIDES: Slide[] = [
     small: "An iOS app; the Bluetooth smart cap is optional. Email drafting is opt-in. Alia never messages anyone without the user's approval.",
   },
   {
-    n: 7,
+    n: 8,
     id: "spanish-crew",
     title: "Scene — Spanish crew. English homeowner. One lead.",
-    kind: "light",
+    kind: "dark",
     chapter: 2,
     takeaway: "The lead says it once in English, approves a natural Spanish draft, and still confirms safety-critical boundaries in person.",
     copy: {
@@ -325,10 +352,10 @@ export const SLIDES: Slide[] = [
       "Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor.",
   },
   {
-    n: 8,
+    n: 9,
     id: "capture",
     title: "Scene — Capture it before the detail disappears",
-    kind: "light",
+    kind: "dark",
     chapter: 2,
     takeaway: "One spoken note on a walkthrough becomes organized notes that come back in the next morning's brief.",
     copy: {
@@ -365,10 +392,10 @@ export const SLIDES: Slide[] = [
     small: "Serial numbers and job details come from what the user says. Email drafting is opt-in.",
   },
   {
-    n: 9,
+    n: 10,
     id: "draft-approve",
     title: "Scene — Draft it now. Send it when you approve.",
-    kind: "light",
+    kind: "dark",
     chapter: 2,
     takeaway: "Messaging comes first: Alia drafts the text, the lead approves it, then it sends.",
     copy: {
@@ -423,10 +450,10 @@ export const SLIDES: Slide[] = [
     small: "Every outbound message waits for the lead's approval. The HOA rule is one the lead supplied.",
   },
   {
-    n: 10,
+    n: 11,
     id: "rain",
     title: "Scene — Rain moved the job. Rebuild the day.",
-    kind: "light",
+    kind: "dark",
     chapter: 2,
     takeaway: "One spoken request rebuilds a rained-out morning, with every change, message and request clearly marked by its state.",
     copy: {
@@ -466,10 +493,10 @@ export const SLIDES: Slide[] = [
     small: "Uses the conditions the lead states and the calendar already on the phone. No live weather, no dealer booking and no automatic calendar changes.",
   },
   {
-    n: 11,
+    n: 12,
     id: "why-stihl",
     title: "Why STIHL — The dealer already sits inside this workday",
-    kind: "light",
+    kind: "dark",
     chapter: 3,
     takeaway: "Greyer fits around motions STIHL dealers already run, and each fit is a hypothesis the pilot can test.",
     copy: {
@@ -494,10 +521,10 @@ export const SLIDES: Slide[] = [
       "Each line is a hypothesis for the pilot to test, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.",
   },
   {
-    n: 12,
+    n: 13,
     id: "offer",
     title: "Collaboration offer — One demo. One dealer cluster. A small pilot.",
-    kind: "light",
+    kind: "dark",
     chapter: 3,
     takeaway: "The offer is three concrete pieces: a joint demo, 10 to 20 pilot kits, and a simple dealer service loop.",
     copy: {
@@ -520,10 +547,10 @@ export const SLIDES: Slide[] = [
     small: "Kit count, access terms and costs are subject to agreement.",
   },
   {
-    n: 13,
+    n: 14,
     id: "pilot",
     title: "Pilot — 20 crew leads. Four weeks of measured use.",
-    kind: "light",
+    kind: "dark",
     chapter: 3,
     takeaway: "A small pilot measures four things over a four-week window inside a roughly 90-day access period, against thresholds agreed in advance.",
     copy: {
@@ -546,7 +573,7 @@ export const SLIDES: Slide[] = [
       "The four weeks are measured inside the ~90-day access period. With only 10 kits, the pilot starts with a first cohort of 10. No analytics or message-delivery tracking is assumed; counts come from what can be verified with participants.",
   },
   {
-    n: 14,
+    n: 15,
     id: "ask",
     title: "Ask — Pick the dealer cluster. Put a demo on the calendar.",
     kind: "dark",
@@ -567,10 +594,10 @@ export const SLIDES: Slide[] = [
       "So here's the ask. Introduce us to Commercial Solutions or to one Pro Dealer cluster. Give us a named counterpart. And let's choose a date for a jobsite demo together. The demo is the gate. If it doesn't hold up on a real site, there's no pilot. If it does, we come back with the pilot plan and terms.",
   },
   {
-    n: 15,
+    n: 16,
     id: "appendix",
     title: "Appendix — Customer detail and operating boundaries",
-    kind: "light",
+    kind: "dark",
     chapter: 4,
     takeaway: "The detail behind the proof slide, and the limits Greyer works within.",
     copy: {

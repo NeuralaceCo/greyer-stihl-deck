@@ -13,8 +13,7 @@ import { viewFor } from "./slides";
 import Lockup from "./Lockup";
 import { createSilk } from "./silk";
 
-/* Slides that sit on the silk background. */
-const SILK = new Set(["title", "vision"]);
+/* The silk sits behind every slide: full strength on the brand slides, softer behind the rest (brand.css). */
 
 gsap.registerPlugin(useGSAP);
 gsap.defaults({ overwrite: "auto" });
@@ -84,7 +83,7 @@ export default function Deck({ slides, chapters, questions, channel: channelName
 
       const silk = canvas.current ? createSilk(canvas.current) : null;
       const draw = () => {
-        if (silk && SILK.has(slides[at.current].id)) silk.render(gsap.ticker.time);
+        silk?.render(gsap.ticker.time);
       };
       const fit = () => {
         el.style.setProperty("--s", String(Math.min(window.innerWidth / 1920, window.innerHeight / 1080)));

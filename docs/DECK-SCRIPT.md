@@ -50,7 +50,27 @@ Tag: Concept render · not a STIHL product
 
 **Small print.** Concept render. Colourway for discussion only; not a STIHL product and not approved by STIHL.
 
-## 3. Shared customer — The person running the crew is also running the office
+## 3. About Greyer — $100K in revenue, built for people who work on site
+
+**Takeaway.** Greyer already earns revenue, and most of its substantial commercial buyers are on-site businesses, the same kind of crews STIHL equips.
+
+**On-slide copy** (40 words)  
+Kicker: About Greyer  
+Headline: **Built for people who work on site.**  
+Body: Most of our substantial commercial buyers build, pave, paint, wire or heat buildings. STIHL equips crews like theirs through Pro Dealers.
+
+**Visual direction.** Dark slide on the silk. Headline top left. Two large figures side by side: $100K (in revenue) and 64% (of substantial commercial buyers are construction-related), the numbers in STIHL orange with mono labels. The body under them, the small print at the bottom.
+
+**Structured on-slide content**
+
+- **$100K** in revenue
+- **64%** of substantial commercial buyers are construction-related
+
+**Speaker notes** (57 words). A word about us. Greyer has done a hundred thousand dollars in revenue. When we looked at who our substantial commercial buyers are, most of them work on site: custom homes, steel, paving, painting, HVAC, a utility. Those are the crews your Pro Dealers already serve, which is why we wanted to start this conversation with STIHL.
+
+**Small print.** Revenue as reported by Greyer. Buyer mix: 7 of 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Not independently verified.
+
+## 4. Shared customer — The person running the crew is also running the office
 
 **Takeaway.** STIHL's pro customer and Greyer's buyers meet in one person: the lead who works the job and also runs its office.
 
@@ -68,7 +88,7 @@ Labels around the photo: Tool work · Crew coordination · Homeowner updates · 
 
 **Speaker notes** (58 words). On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's exactly what the pilot would test.
 
-## 4. Proof — 7 of 11 substantial commercial buyers are construction-related
+## 5. Proof — 7 of 11 substantial commercial buyers are construction-related
 
 **Takeaway.** Most of Greyer's substantial commercial buyers are building, sitework, energy or utility firms, which overlaps with the construction and utility customers STIHL serves through Pro Dealers.
 
@@ -97,7 +117,7 @@ Stat: **64%** · 7 of 11
 
 **Small print.** Base: 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Customer details are supplied by Greyer and not independently verified.
 
-## 5. The wasted hour — The job ends. The office starts.
+## 6. The wasted hour — The job ends. The office starts.
 
 **Takeaway.** Everything said and promised during the day piles up as admin the lead does after work.
 
@@ -122,7 +142,7 @@ Labelled on the slide: _Illustrative mockup_
 
 **Small print.** “The wasted hour” is a label for scattered after-hours admin, not a measured figure.
 
-## 6. What Greyer is — Say it once. Review what comes next.
+## 7. What Greyer is — Say it once. Review what comes next.
 
 **Takeaway.** Greyer turns one spoken request into a draft the lead reviews and approves, through the channels crews already use.
 
@@ -143,7 +163,7 @@ Headline: **Say it once. Review what comes next.**
 
 **Small print.** An iOS app; the Bluetooth smart cap is optional. Email drafting is opt-in. Alia never messages anyone without the user's approval.
 
-## 7. Scene — Spanish crew. English homeowner. One lead.
+## 8. Scene — Spanish crew. English homeowner. One lead.
 
 **Takeaway.** The lead says it once in English, approves a natural Spanish draft, and still confirms safety-critical boundaries in person.
 
@@ -182,7 +202,7 @@ Secondary · Dealer contact in Spanish, office copy in English · via WhatsApp
 
 **Small print.** Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor.
 
-## 8. Scene — Capture it before the detail disappears
+## 9. Scene — Capture it before the detail disappears
 
 **Takeaway.** One spoken note on a walkthrough becomes organized notes that come back in the next morning's brief.
 
@@ -221,7 +241,7 @@ Also drafted from the same notes (chips): Quote from walkthrough notes · Dealer
 
 **Small print.** Serial numbers and job details come from what the user says. Email drafting is opt-in.
 
-## 9. Scene — Draft it now. Send it when you approve.
+## 10. Scene — Draft it now. Send it when you approve.
 
 **Takeaway.** Messaging comes first: Alia drafts the text, the lead approves it, then it sends.
 
@@ -260,7 +280,7 @@ Secondary · HOA rule (from Ryan) · via WhatsApp
 
 **Small print.** Every outbound message waits for the lead's approval. The HOA rule is one the lead supplied.
 
-## 10. Scene — Rain moved the job. Rebuild the day.
+## 11. Scene — Rain moved the job. Rebuild the day.
 
 **Takeaway.** One spoken request rebuilds a rained-out morning, with every change, message and request clearly marked by its state.
 
@@ -297,7 +317,7 @@ Legend: Proposed (dashed) · Approved by the lead (green) · Requested (outline 
 
 **Small print.** Uses the conditions the lead states and the calendar already on the phone. No live weather, no dealer booking and no automatic calendar changes.
 
-## 11. Why STIHL — The dealer already sits inside this workday
+## 12. Why STIHL — The dealer already sits inside this workday
 
 **Takeaway.** Greyer fits around motions STIHL dealers already run, and each fit is a hypothesis the pilot can test.
 
@@ -319,7 +339,7 @@ Column head: Pilot hypothesis
 
 **Small print.** Each line is a hypothesis for the pilot to test, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.
 
-## 12. Collaboration offer — One demo. One dealer cluster. A small pilot.
+## 13. Collaboration offer — One demo. One dealer cluster. A small pilot.
 
 **Takeaway.** The offer is three concrete pieces: a joint demo, 10 to 20 pilot kits, and a simple dealer service loop.
 
@@ -341,7 +361,7 @@ Clarifier: No dealer-ticket integration assumed.
 
 **Small print.** Kit count, access terms and costs are subject to agreement.
 
-## 13. Pilot — 20 crew leads. Four weeks of measured use.
+## 14. Pilot — 20 crew leads. Four weeks of measured use.
 
 **Takeaway.** A small pilot measures four things over a four-week window inside a roughly 90-day access period, against thresholds agreed in advance.
 
@@ -367,7 +387,7 @@ Headline: **20 crew leads. Four weeks of measured use.**
 
 **Small print.** The four weeks are measured inside the ~90-day access period. With only 10 kits, the pilot starts with a first cohort of 10. No analytics or message-delivery tracking is assumed; counts come from what can be verified with participants.
 
-## 14. Ask — Pick the dealer cluster. Put a demo on the calendar.
+## 15. Ask — Pick the dealer cluster. Put a demo on the calendar.
 
 **Takeaway.** The next step is concrete: an introduction, a named counterpart and a demo date, with the demo deciding the pilot.
 
@@ -387,7 +407,7 @@ Gate: The demo decides whether the pilot goes ahead.
 
 **Speaker notes** (59 words). So here's the ask. Introduce us to Commercial Solutions or to one Pro Dealer cluster. Give us a named counterpart. And let's choose a date for a jobsite demo together. The demo is the gate. If it doesn't hold up on a real site, there's no pilot. If it does, we come back with the pilot plan and terms.
 
-## 15. Appendix — Customer detail and operating boundaries
+## 16. Appendix — Customer detail and operating boundaries
 
 **Takeaway.** The detail behind the proof slide, and the limits Greyer works within.
 
@@ -454,14 +474,14 @@ Headline: **Customer detail and operating boundaries**
 
 ### Capabilities shown in the scenes
 
-- [ ] Spanish drafts from English voice (slides 7, 9 and 10): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).
-- [ ] An English version of an incoming Spanish message (slide 7, labelled Proposed demo workflow): confirm it exists, or keep the label.
-- [ ] Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 5, 7 and 9).
-- [ ] Drafting into a WhatsApp group thread (slide 7, "Holt job · crew").
-- [ ] Sorting one voice note into punch list, materials, change order and tool service (slide 8, labelled Proposed demo workflow).
-- [ ] Notes showing up in the next morning's brief (slide 8). The brief covers notes; confirm nothing on the slide implies how or when it is built.
-- [ ] Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 10, labelled Proposed demo workflow).
-- [ ] An office copy made from a dealer message (slide 7 strip, labelled Proposed demo workflow).
+- [ ] Spanish drafts from English voice (slides 8, 10 and 11): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).
+- [ ] An English version of an incoming Spanish message (slide 8, labelled Proposed demo workflow): confirm it exists, or keep the label.
+- [ ] Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 6, 8 and 10).
+- [ ] Drafting into a WhatsApp group thread (slide 8, "Holt job · crew").
+- [ ] Sorting one voice note into punch list, materials, change order and tool service (slide 9, labelled Proposed demo workflow).
+- [ ] Notes showing up in the next morning's brief (slide 9). The brief covers notes; confirm nothing on the slide implies how or when it is built.
+- [ ] Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 11, labelled Proposed demo workflow).
+- [ ] An office copy made from a dealer message (slide 8 strip, labelled Proposed demo workflow).
 - [ ] What approval looks like in the real app (a tap, a spoken yes, a name and time). Match the mocks to it or relabel them.
 - [ ] How a request starts on the cap. The deck doesn't show it, but the demo narration will need it.
 
@@ -476,6 +496,7 @@ Headline: **Customer detail and operating boundaries**
 
 ### Assets and permissions
 
+- [ ] The revenue figure on slide 3 ($100K): confirm the number and its period (to date or annual) before presenting.
 - [ ] Permission from the 11 named customers to be named to STIHL. Names are text only; no logos.
 - [ ] A vector (SVG) greyer wordmark. Only a 437×100 PNG is on file.
 - [ ] Sign-off on the generated jobsite photos: PPE correct, nobody using Alia while operating a tool, no STIHL or other real tool brands.
@@ -505,12 +526,12 @@ Headline: **Customer detail and operating boundaries**
 
 ### Spanish lines for native review
 
-- [ ] Slide 5: “¿Mañana empezamos a las 7 o a las 8?”
-- [ ] Slide 7: “Equipo: el roble se queda, no lo toquen. Solo limpiamos dentro de las banderitas. Antes de empezar, reviso la línea con Javier.”
-- [ ] Slide 7: “Entendido. ¿Y el arbusto junto a la cerca? ¿También se queda?”
-- [ ] Slide 7: “Hoy solo trabajamos dentro del área marcada. Todo el equipo de protección puesto antes de arrancar cualquier herramienta.”
-- [ ] Slide 7: “Hola Rosa, la desbrozadora se apaga a cada rato. Número de serie terminado en 4471. ¿Se la podemos llevar mañana?”
-- [ ] Slide 9: “No hay gasolina.”
-- [ ] Slide 9: “Hay un galón lleno en la camioneta 2. Si hace falta más, paso por gasolina antes de las 10.”
-- [ ] Slide 9: “Recordatorio: nada de sopladoras antes de las 8. Es regla de la HOA.”
-- [ ] Slide 10: “Por la lluvia, empezamos en casa de Holt a la 1:00. Nos vemos en el taller a las 12:30.”
+- [ ] Slide 6: “¿Mañana empezamos a las 7 o a las 8?”
+- [ ] Slide 8: “Equipo: el roble se queda, no lo toquen. Solo limpiamos dentro de las banderitas. Antes de empezar, reviso la línea con Javier.”
+- [ ] Slide 8: “Entendido. ¿Y el arbusto junto a la cerca? ¿También se queda?”
+- [ ] Slide 8: “Hoy solo trabajamos dentro del área marcada. Todo el equipo de protección puesto antes de arrancar cualquier herramienta.”
+- [ ] Slide 8: “Hola Rosa, la desbrozadora se apaga a cada rato. Número de serie terminado en 4471. ¿Se la podemos llevar mañana?”
+- [ ] Slide 10: “No hay gasolina.”
+- [ ] Slide 10: “Hay un galón lleno en la camioneta 2. Si hace falta más, paso por gasolina antes de las 10.”
+- [ ] Slide 10: “Recordatorio: nada de sopladoras antes de las 8. Es regla de la HOA.”
+- [ ] Slide 11: “Por la lluvia, empezamos en casa de Holt a la 1:00. Nos vemos en el taller a las 12:30.”

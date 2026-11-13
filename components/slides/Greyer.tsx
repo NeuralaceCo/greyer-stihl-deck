@@ -12,7 +12,7 @@ export default function Greyer({ slide }: ViewProps) {
         <Kicker>{slide.copy.kicker!}</Kicker>
         <Title text={slide.copy.headline} className="gs-s5-title" />
       </div>
-      <Photo src="/media/cap-studio-1200.webp" alt="The greyer cap: heather-grey cotton with a small black speaker module on the side." className="gs-s5-cap" />
+      <Photo src="/media/cap-greyer.webp" alt="The greyer cap: heather-grey cotton with a small black speaker module on the side." className="gs-s5-cap" />
       <ol className="gs-flow" data-in>
         {slide.mock.steps.map((s, i) => (
           <li key={s.label} data-key={i === 2}>

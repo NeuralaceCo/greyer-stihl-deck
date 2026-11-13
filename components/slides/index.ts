@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import type { ViewProps } from "./parts";
 import TitleSlide from "./Title";
 import Vision from "./Vision";
+import About from "./About";
 import Customer from "./Customer";
 import Proof from "./Proof";
 import WastedHour from "./WastedHour";
@@ -17,6 +18,7 @@ import Placeholder from "./Placeholder";
 const BUILT: Record<string, ComponentType<ViewProps>> = {
   title: TitleSlide,
   vision: Vision,
+  about: About,
   customer: Customer,
   proof: Proof,
   "wasted-hour": WastedHour,

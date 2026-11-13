@@ -134,7 +134,7 @@
 .gs-s5-title { font-size: 84px; }
 
 .gs-s5-cap { position: absolute; right: 96px; top: 130px; width: 480px; height: 400px; }
-.gs-s5-cap img { object-position: 50% 60%; }
+.gs-s5-cap img { object-position: 46% 58%; transform: scale(1.25); }
 
 .gs-flow {
   position: absolute;

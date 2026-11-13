@@ -5,14 +5,14 @@ export const CONFIRM: { area: string; items: string[] }[] = [
   {
     area: "Capabilities shown in the scenes",
     items: [
-      "Spanish drafts from English voice (slides 7, 9 and 10): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).",
-      "An English version of an incoming Spanish message (slide 7, labelled Proposed demo workflow): confirm it exists, or keep the label.",
-      "Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 5, 7 and 9).",
-      "Drafting into a WhatsApp group thread (slide 7, \"Holt job · crew\").",
-      "Sorting one voice note into punch list, materials, change order and tool service (slide 8, labelled Proposed demo workflow).",
-      "Notes showing up in the next morning's brief (slide 8). The brief covers notes; confirm nothing on the slide implies how or when it is built.",
-      "Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 10, labelled Proposed demo workflow).",
-      "An office copy made from a dealer message (slide 7 strip, labelled Proposed demo workflow).",
+      "Spanish drafts from English voice (slides 8, 10 and 11): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).",
+      "An English version of an incoming Spanish message (slide 8, labelled Proposed demo workflow): confirm it exists, or keep the label.",
+      "Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 6, 8 and 10).",
+      "Drafting into a WhatsApp group thread (slide 8, \"Holt job · crew\").",
+      "Sorting one voice note into punch list, materials, change order and tool service (slide 9, labelled Proposed demo workflow).",
+      "Notes showing up in the next morning's brief (slide 9). The brief covers notes; confirm nothing on the slide implies how or when it is built.",
+      "Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 11, labelled Proposed demo workflow).",
+      "An office copy made from a dealer message (slide 8 strip, labelled Proposed demo workflow).",
       "What approval looks like in the real app (a tap, a spoken yes, a name and time). Match the mocks to it or relabel them.",
       "How a request starts on the cap. The deck doesn't show it, but the demo narration will need it.",
     ],
@@ -31,6 +31,7 @@ export const CONFIRM: { area: string; items: string[] }[] = [
   {
     area: "Assets and permissions",
     items: [
+      "The revenue figure on slide 3 ($100K): confirm the number and its period (to date or annual) before presenting.",
       "Permission from the 11 named customers to be named to STIHL. Names are text only; no logos.",
       "A vector (SVG) greyer wordmark. Only a 437×100 PNG is on file.",
       "Sign-off on the generated jobsite photos: PPE correct, nobody using Alia while operating a tool, no STIHL or other real tool brands.",

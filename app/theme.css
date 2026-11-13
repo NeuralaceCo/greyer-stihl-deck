@@ -1,0 +1,162 @@
+/* One theme for the whole deck, set by the brand slides: graphite on the silk, light type, STIHL orange as
+   the accent. Every slide is data-kind="dark"; these tokens turn the light-theme components (cards, bubbles,
+   chips, tables) dark where they stand, and a few fills swap so nothing ends up light-on-light. */
+
+[data-kind="dark"] {
+  --ink: #f4f2ee;
+  --ink-80: rgba(244, 242, 238, 0.8);
+  --ink-60: rgba(244, 242, 238, 0.62);
+  --line: rgba(244, 242, 238, 0.12);
+  --line-strong: rgba(244, 242, 238, 0.26);
+  --card: rgba(28, 30, 32, 0.9);
+  --canvas: #2a2d30;
+  --mist: #2b3139;
+  --mist-ink: #cfd8e3;
+  --mist-line: #5c697b;
+  --ok-soft: rgba(12, 163, 82, 0.2);
+  --ok-ink: #72e2a7;
+}
+
+/* Fills that were ink with light type become light with graphite type. */
+[data-kind="dark"] .gs-bubble[data-state="sent"],
+[data-kind="dark"] .gs-state[data-state="confirmed"] {
+  color: var(--graphite);
+}
+
+[data-kind="dark"] .gs-lang {
+  background: rgba(244, 242, 238, 0.1);
+  color: var(--ink-80);
+}
+
+[data-kind="dark"] .gs-bubble[data-state="sent"] .gs-lang {
+  background: rgba(20, 21, 22, 0.1);
+  color: rgba(20, 21, 22, 0.7);
+}
+
+/* The one action colour: STIHL orange. */
+[data-kind="dark"] .gs-btn {
+  border-color: var(--stihl);
+  background: var(--stihl);
+  color: var(--graphite);
+}
+
+[data-kind="dark"] .gs-btn:hover {
+  background: #ff8a33;
+}
+
+[data-kind="dark"] .gs-btn[data-variant="ghost"] {
+  border-color: var(--line-strong);
+  background: none;
+  color: var(--ink);
+}
+
+[data-kind="dark"] .gs-btn[data-variant="ghost"]:hover {
+  background: rgba(244, 242, 238, 0.08);
+}
+
+[data-kind="dark"] .gs-thread {
+  box-shadow: none;
+}
+
+[data-kind="dark"] .gs-brief {
+  border: 1px solid var(--line);
+  background: #0e0f10;
+  color: var(--ink);
+}
+
+[data-kind="dark"] .gs-tl-window {
+  background: var(--stihl);
+  color: var(--graphite);
+}
+
+[data-kind="dark"] .gs-tl-base {
+  background-image: repeating-linear-gradient(135deg, transparent 0 8px, rgba(244, 242, 238, 0.12) 8px 9px);
+}
+
+/* Orange marks the figures and numerals that carry the argument. */
+[data-kind="dark"] .gs-stat,
+[data-kind="dark"] .gs-offer span,
+[data-kind="dark"] .gs-about-value {
+  color: var(--stihl);
+}
+
+[data-kind="dark"] .gs-flow li[data-key="true"] {
+  border-color: var(--stihl);
+}
+
+[data-kind="dark"] .gs-date {
+  border-color: var(--stihl);
+  color: var(--stihl);
+}
+
+[data-kind="dark"] .gs-photo {
+  background-color: var(--carbon);
+}
+
+/* ---------- 3 · About Greyer ---------- */
+
+.gs-sa {
+  position: absolute;
+  inset: 0;
+}
+
+.gs-about-head {
+  position: absolute;
+  left: 96px;
+  top: 150px;
+  width: 1400px;
+}
+
+.gs-about-title {
+  font-size: 84px;
+}
+
+.gs-about-stats {
+  position: absolute;
+  left: 96px;
+  right: 96px;
+  top: 360px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin: 0;
+}
+
+.gs-about-stats div {
+  padding-top: 26px;
+  border-top: 1px solid var(--line-strong);
+}
+
+.gs-about-value {
+  margin: 0;
+  font-size: 220px;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.gs-about-stats dd {
+  max-width: 600px;
+  margin: 22px 0 0 6px;
+  font-family: var(--font-mono), monospace;
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--ink-80);
+}
+
+.gs-about-body {
+  position: absolute;
+  left: 96px;
+  top: 790px;
+  width: 1200px;
+  margin: 0;
+  font-size: 32px;
+}
+
+.gs-about-small {
+  position: absolute;
+  left: 96px;
+  right: 96px;
+  bottom: 56px;
+  max-width: none;
+}
