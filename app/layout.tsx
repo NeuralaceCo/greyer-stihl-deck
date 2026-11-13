@@ -15,7 +15,7 @@ const ui = Instrument_Sans({ subsets: ["latin"], weight: ["400", "500"], variabl
 /* A private proposal: kept out of search engines. */
 export const metadata: Metadata = {
   title: "Greyer × STIHL | Proposal",
-  description: "A proposed jobsite demo and crew-lead pilot, for STIHL Commercial Solutions and Pro Dealer leadership.",
+  description: "A proposal for STIHL Commercial Solutions and Pro Dealer leadership: Greyer's voice-first cap and app, and a few ways to work together.",
   robots: { index: false, follow: false },
 };
 

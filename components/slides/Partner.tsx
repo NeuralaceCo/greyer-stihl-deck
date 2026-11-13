@@ -3,7 +3,7 @@
 import { Kicker, Photo, Small, Title, type ViewProps } from "./parts";
 import { Wave } from "../mock/Mock";
 
-/* Slide 10: what STIHL dealers already do, each paired with what the pilot would test. */
+/* Why STIHL: what STIHL dealers already do, each paired with what we would explore together. */
 export function WhyStihl({ slide }: ViewProps) {
   if (slide.mock?.type !== "motions") return null;
   return (
