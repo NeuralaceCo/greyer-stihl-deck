@@ -17,6 +17,8 @@ export default function About({ slide, active }: ViewProps) {
   const stats = slide.mock?.type === "about" ? slide.mock.stats : [];
 
   useOnActive(active, ref, () => {
+    /* The count-up writes text directly, which a reverted context can't undo: skip it for less motion. */
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const els = gsap.utils.toArray<HTMLElement>(".gs-about-value", ref.current);
     const tweens = els.map((el, i) => {
       const parts = split(stats[i].value);
