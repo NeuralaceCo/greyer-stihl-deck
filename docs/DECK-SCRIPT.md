@@ -341,23 +341,23 @@ Column head: Worth exploring
 
 ## 13. Ways to work together — open options
 
-**Takeaway.** There are several ways this could work, from a co-branded edition to white label to Alia on its own, and the shape is left open.
+**Takeaway.** There are several ways this could work, from a co-branded edition to white label to selling the ear piece on its own, and the shape is left open.
 
-**On-slide copy** (43 words)  
+**On-slide copy** (44 words)  
 Kicker: Ways to work together  
 Headline: **A few shapes this could take.**
 
-**Visual direction.** Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the signal waveform), a short title and one line. The clarifier under the cards at body size, small print at the bottom.
+**Visual direction.** Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the ear-piece close-up), a short title and one line. The clarifier under the cards at body size, small print at the bottom.
 
 **Structured on-slide content**
 
 - **01 Co-branded edition**: Greyer × STIHL cap, Alia inside.
 - **02 White label**: STIHL-branded cap and app, built on Greyer.
-- **03 Alia on its own**: The assistant, no cap needed.
+- **03 The ear piece**: We can sell it on its own.
 
 Clarifier: Open to whatever shape fits. Nothing is agreed.
 
-**Speaker notes** (57 words). We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or STIHL could offer Alia on its own, without the cap. We're open to whichever shape fits your customers.
+**Speaker notes** (56 words). We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or we can sell the ear piece on its own. We're open to whichever shape fits your customers.
 
 **Small print.** Options for discussion only. No terms, pricing or integration are assumed, and STIHL has not agreed to any of them.
 
@@ -441,7 +441,7 @@ Headline: **Customer detail and operating boundaries**
 - **Do your customers use STIHL?** We don't know, and we don't claim it. The proof shows overlap with the segments your Pro Dealers serve, nothing more.
 - **What would STIHL be signing up for?** Nothing today. We'd like to find the shape that fits first, then agree terms together.
 - **What would white label mean?** A STIHL-branded edition of the cap and app, built on Greyer. Scope, terms and feasibility would be worked out together; nothing is assumed.
-- **Could STIHL offer Alia without the cap?** That's one of the options. The cap is optional; Alia runs in the iOS app.
+- **Can you sell the ear piece on its own?** Yes, that's one of the options on the table. What it attaches to and how it's sold would be worked out together.
 - **What about privacy and data?** A privacy and data-handling review comes before any rollout. We aren't presenting policies today.
 
 ---
@@ -465,7 +465,7 @@ Headline: **Customer detail and operating boundaries**
 
 - [ ] Co-branded edition: STIHL's approval of the colourway and lockup, who makes and sells a crew-edition cap, and the terms.
 - [ ] White label: what a STIHL-branded cap and app would take (branding, app listing, support) and whether Greyer can offer it.
-- [ ] Alia on its own: how STIHL would offer the app without the cap, and pricing.
+- [ ] The ear piece on its own: confirm Greyer can sell the module separately, what it attaches to, how it pairs, and the price.
 - [ ] Every user needs an iPhone, since Greyer is iOS only.
 - [ ] Who supports crews day to day under each option.
 

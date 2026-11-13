@@ -1,7 +1,6 @@
 "use client";
 
 import { Kicker, Photo, Small, Title, type ViewProps } from "./parts";
-import { Wave } from "../mock/Mock";
 
 /* Why STIHL: what STIHL dealers already do, each paired with what we would explore together. */
 export function WhyStihl({ slide }: ViewProps) {
@@ -53,7 +52,7 @@ export function Offer({ slide }: ViewProps) {
               <div className="gs-offer-art" aria-hidden="true">
                 {x.art === "cap" && <img src="/media/cap-crew.webp" alt="" width={2048} height={2048} />}
                 {x.art === "wordmark" && <em>STIHL</em>}
-                {x.art === "wave" && <Wave />}
+                {x.art === "ear" && <img className="gs-offer-ear" src="/media/ear-crew.webp" alt="" width={2048} height={2048} />}
               </div>
             )}
             <b>{x.title}</b>

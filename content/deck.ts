@@ -62,8 +62,8 @@ export type Mock =
       }[];
     }
   | { type: "motions"; header: string; items: { motion: string; test: string }[] }
-  /* Cards with a short title and line; each can carry a small picture (the crew cap, a wordmark, a waveform). */
-  | { type: "offer"; items: { n: string; title: string; text: string; art?: "cap" | "wordmark" | "wave" }[]; clarifier: string }
+  /* Cards with a short title and line; each can carry a small picture (the crew cap, a wordmark, the ear piece). */
+  | { type: "offer"; items: { n: string; title: string; text: string; art?: "cap" | "wordmark" | "ear" }[]; clarifier: string }
   | {
       type: "appendix";
       groups: { title: string; rows: { name: string; business: string }[] }[];
@@ -525,24 +525,24 @@ export const SLIDES: Slide[] = [
     title: "Ways to work together — open options",
     kind: "dark",
     chapter: 3,
-    takeaway: "There are several ways this could work, from a co-branded edition to white label to Alia on its own, and the shape is left open.",
+    takeaway: "There are several ways this could work, from a co-branded edition to white label to selling the ear piece on its own, and the shape is left open.",
     copy: {
       kicker: "Ways to work together",
       headline: "A few shapes this could take.",
     },
     visual:
-      "Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the signal waveform), a short title and one line. The clarifier under the cards at body size, small print at the bottom.",
+      "Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the ear-piece close-up), a short title and one line. The clarifier under the cards at body size, small print at the bottom.",
     mock: {
       type: "offer",
       items: [
         { n: "01", title: "Co-branded edition", text: "Greyer × STIHL cap, Alia inside.", art: "cap" },
         { n: "02", title: "White label", text: "STIHL-branded cap and app, built on Greyer.", art: "wordmark" },
-        { n: "03", title: "Alia on its own", text: "The assistant, no cap needed.", art: "wave" },
+        { n: "03", title: "The ear piece", text: "We can sell it on its own.", art: "ear" },
       ],
       clarifier: "Open to whatever shape fits. Nothing is agreed.",
     },
     notes:
-      "We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or STIHL could offer Alia on its own, without the cap. We're open to whichever shape fits your customers.",
+      "We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or we can sell the ear piece on its own. We're open to whichever shape fits your customers.",
     small: "Options for discussion only. No terms, pricing or integration are assumed, and STIHL has not agreed to any of them.",
   },
   {
@@ -632,7 +632,7 @@ export const QUESTIONS = {
     { q: "Do your customers use STIHL?", a: "We don't know, and we don't claim it. The proof shows overlap with the segments your Pro Dealers serve, nothing more." },
     { q: "What would STIHL be signing up for?", a: "Nothing today. We'd like to find the shape that fits first, then agree terms together." },
     { q: "What would white label mean?", a: "A STIHL-branded edition of the cap and app, built on Greyer. Scope, terms and feasibility would be worked out together; nothing is assumed." },
-    { q: "Could STIHL offer Alia without the cap?", a: "That's one of the options. The cap is optional; Alia runs in the iOS app." },
+    { q: "Can you sell the ear piece on its own?", a: "Yes, that's one of the options on the table. What it attaches to and how it's sold would be worked out together." },
     { q: "What about privacy and data?", a: "A privacy and data-handling review comes before any rollout. We aren't presenting policies today." },
   ],
 };

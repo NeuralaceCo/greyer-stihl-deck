@@ -22,7 +22,7 @@ export const CONFIRM: { area: string; items: string[] }[] = [
     items: [
       "Co-branded edition: STIHL's approval of the colourway and lockup, who makes and sells a crew-edition cap, and the terms.",
       "White label: what a STIHL-branded cap and app would take (branding, app listing, support) and whether Greyer can offer it.",
-      "Alia on its own: how STIHL would offer the app without the cap, and pricing.",
+      "The ear piece on its own: confirm Greyer can sell the module separately, what it attaches to, how it pairs, and the price.",
       "Every user needs an iPhone, since Greyer is iOS only.",
       "Who supports crews day to day under each option.",
     ],
