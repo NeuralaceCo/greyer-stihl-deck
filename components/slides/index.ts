@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import type { ViewProps } from "./parts";
 import TitleSlide from "./Title";
+import Vision from "./Vision";
 import Customer from "./Customer";
 import Proof from "./Proof";
 import WastedHour from "./WastedHour";
@@ -15,6 +16,7 @@ import Placeholder from "./Placeholder";
 /* Slide id → its layout. A slide without one shows its copy plainly. */
 const BUILT: Record<string, ComponentType<ViewProps>> = {
   title: TitleSlide,
+  vision: Vision,
   customer: Customer,
   proof: Proof,
   "wasted-hour": WastedHour,

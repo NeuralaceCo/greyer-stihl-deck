@@ -26,6 +26,10 @@ export type Mini = { title: string; channel: Channel; lines: ChatLine[] };
 
 export type Mock =
   | { type: "lockup"; voice: string }
+  /* Slide 1: the collab lockup and the cap, ringed by rotating text. The ring is decoration, not copy. */
+  | { type: "brand"; ring: string; tag: string }
+  /* Slide 2: the cap becomes a crew edition, then the camera goes to the ear piece. */
+  | { type: "vision"; callouts: { label: string; text: string }[]; tag: string }
   | { type: "roles"; centre: string; roles: string[] }
   | { type: "proof"; stat: string; of: string; names: { name: string; business: string }[] }
   | { type: "fragments"; items: { time: string; channel: Channel; lang?: Lang; from?: string; text: string; status: string }[] }
@@ -109,21 +113,48 @@ export const SLIDES: Slide[] = [
     title: "Title — Hands on the tool. Office in the cap.",
     kind: "dark",
     chapter: -1,
-    takeaway: "Greyer proposes a jobsite demo and a small crew-lead pilot, built on a customer STIHL and Greyer already share.",
+    takeaway: "Greyer proposes a jobsite demo and a small crew-lead pilot, built around the cap and the crews STIHL already equips.",
     copy: {
-      kicker: "Greyer (Alia) × STIHL · A proposal",
+      kicker: "A proposal for STIHL Commercial Solutions",
       headline: "Hands on the tool. Office in the cap.",
-      body: "STIHL equips the crew. Greyer handles the texts, notes and schedule around the job. We propose a jobsite demo, then a small crew-lead pilot.",
+      body: "Greyer's voice-first cap and app, around the crews STIHL already equips. A jobsite demo first, then a small crew-lead pilot.",
     },
     visual:
-      "Dark graphite slide. Headline left, in Asta Sans at display size. Photo on the right 60%, full height: a crew lead at a truck tailgate at a safe pause, the tool set down on the tailgate, the greyer cap on, glancing down mid-sentence. Crew in the background in full PPE, no tool running. One small voice chip in signal yellow-green over the photo. Top left: the greyer wordmark, a thin ×, and STIHL set as plain text in the same type (no STIHL logo).",
-    mock: { type: "lockup", voice: "Alia, text Karen we're on our way." },
+      "Dark slide over a slow silk background: graphite folds with STIHL orange catching the light toward the lower right. Left: the collab lockup at display size (the greyer wordmark in white, a thin ×, STIHL in bold caps in STIHL orange with a sheen passing across it), its letters blurring into focus one by one; under it the anchor line and one line of body. Right: the Greyer cap rendered on graphite, floating gently and tilting toward the pointer, ringed by slowly rotating text. A 'Concept render' tag. STIHL is set as text in our type, not their logo.",
+    mock: { type: "brand", ring: "Hands on the tool · Office in the cap · Greyer × STIHL · ", tag: "Concept render" },
     notes:
       "Thanks for the time. One idea today: the person whose hands are on your tools is also running the office for the job. Greyer gives them a voice-first way to handle the texts, notes and scheduling. STIHL stays the tool, the dealer, the service and the parts. We're asking for two things: a jobsite demo, then a small pilot with one dealer cluster.",
-    small: "A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer.",
+    small: "A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer. Concept render; colours for discussion only.",
   },
   {
     n: 2,
+    id: "vision",
+    title: "Vision — A crew edition of the cap (concept)",
+    kind: "dark",
+    chapter: -1,
+    takeaway: "The picture to build toward: Greyer's cap in a crew colourway, with the ear piece as the lead's line to Alia.",
+    copy: {
+      kicker: "The vision · concept",
+      headline: "Same cap. Crew colours. Office at the ear.",
+      body: "A concept crew edition in a STIHL-inspired colourway. The lead talks to Alia between cuts, never during them.",
+    },
+    visual:
+      "Dark slide over the same silk background. Right: the Greyer cap on graphite; an orange light sweeps across it and leaves the concept crew edition in its place (orange crown, charcoal brim, warm grey perforated side, the same black module). The camera pushes in to the ear piece, then hands off to a dramatic low close-up of the module on the crew cap, with signal-yellow rings pulsing from it. Left: kicker, headline, body, three numbered callouts and a 'Concept render · not a STIHL product' tag.",
+    mock: {
+      type: "vision",
+      callouts: [
+        { label: "Ear piece", text: "Speak to Alia" },
+        { label: "Bluetooth", text: "Pairs with iPhone" },
+        { label: "Approve", text: "Then it sends" },
+      ],
+      tag: "Concept render · not a STIHL product",
+    },
+    notes:
+      "Here's the picture we'd build toward. Greyer's cap in a crew colourway, inspired by STIHL. It's a concept for discussion, not a product either of us has agreed to. The ear piece is the point: the lead speaks to Alia at a safe pause, hears the draft back, and approves it before anything sends.",
+    small: "Concept render. Colourway for discussion only; not a STIHL product and not approved by STIHL.",
+  },
+  {
+    n: 3,
     id: "customer",
     title: "Shared customer — The person running the crew is also running the office",
     kind: "light",
@@ -145,7 +176,7 @@ export const SLIDES: Slide[] = [
       "On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's exactly what the pilot would test.",
   },
   {
-    n: 3,
+    n: 4,
     id: "proof",
     title: "Proof — 7 of 11 substantial commercial buyers are construction-related",
     kind: "light",
@@ -178,7 +209,7 @@ export const SLIDES: Slide[] = [
       "Base: 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Customer details are supplied by Greyer and not independently verified.",
   },
   {
-    n: 4,
+    n: 5,
     id: "wasted-hour",
     title: "The wasted hour — The job ends. The office starts.",
     kind: "dark",
@@ -206,7 +237,7 @@ export const SLIDES: Slide[] = [
     small: "“The wasted hour” is a label for scattered after-hours admin, not a measured figure.",
   },
   {
-    n: 5,
+    n: 6,
     id: "greyer",
     title: "What Greyer is — Say it once. Review what comes next.",
     kind: "light",
@@ -233,7 +264,7 @@ export const SLIDES: Slide[] = [
     small: "An iOS app; the Bluetooth smart cap is optional. Email drafting is opt-in. Alia never messages anyone without the user's approval.",
   },
   {
-    n: 6,
+    n: 7,
     id: "spanish-crew",
     title: "Scene — Spanish crew. English homeowner. One lead.",
     kind: "light",
@@ -294,7 +325,7 @@ export const SLIDES: Slide[] = [
       "Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor.",
   },
   {
-    n: 7,
+    n: 8,
     id: "capture",
     title: "Scene — Capture it before the detail disappears",
     kind: "light",
@@ -334,7 +365,7 @@ export const SLIDES: Slide[] = [
     small: "Serial numbers and job details come from what the user says. Email drafting is opt-in.",
   },
   {
-    n: 8,
+    n: 9,
     id: "draft-approve",
     title: "Scene — Draft it now. Send it when you approve.",
     kind: "light",
@@ -392,7 +423,7 @@ export const SLIDES: Slide[] = [
     small: "Every outbound message waits for the lead's approval. The HOA rule is one the lead supplied.",
   },
   {
-    n: 9,
+    n: 10,
     id: "rain",
     title: "Scene — Rain moved the job. Rebuild the day.",
     kind: "light",
@@ -435,7 +466,7 @@ export const SLIDES: Slide[] = [
     small: "Uses the conditions the lead states and the calendar already on the phone. No live weather, no dealer booking and no automatic calendar changes.",
   },
   {
-    n: 10,
+    n: 11,
     id: "why-stihl",
     title: "Why STIHL — The dealer already sits inside this workday",
     kind: "light",
@@ -463,7 +494,7 @@ export const SLIDES: Slide[] = [
       "Each line is a hypothesis for the pilot to test, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.",
   },
   {
-    n: 11,
+    n: 12,
     id: "offer",
     title: "Collaboration offer — One demo. One dealer cluster. A small pilot.",
     kind: "light",
@@ -489,7 +520,7 @@ export const SLIDES: Slide[] = [
     small: "Kit count, access terms and costs are subject to agreement.",
   },
   {
-    n: 12,
+    n: 13,
     id: "pilot",
     title: "Pilot — 20 crew leads. Four weeks of measured use.",
     kind: "light",
@@ -515,7 +546,7 @@ export const SLIDES: Slide[] = [
       "The four weeks are measured inside the ~90-day access period. With only 10 kits, the pilot starts with a first cohort of 10. No analytics or message-delivery tracking is assumed; counts come from what can be verified with participants.",
   },
   {
-    n: 13,
+    n: 14,
     id: "ask",
     title: "Ask — Pick the dealer cluster. Put a demo on the calendar.",
     kind: "dark",
@@ -536,7 +567,7 @@ export const SLIDES: Slide[] = [
       "So here's the ask. Introduce us to Commercial Solutions or to one Pro Dealer cluster. Give us a named counterpart. And let's choose a date for a jobsite demo together. The demo is the gate. If it doesn't hold up on a real site, there's no pilot. If it does, we come back with the pilot plan and terms.",
   },
   {
-    n: 14,
+    n: 15,
     id: "appendix",
     title: "Appendix — Customer detail and operating boundaries",
     kind: "light",

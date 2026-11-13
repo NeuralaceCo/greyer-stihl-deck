@@ -15,6 +15,7 @@ function structured(m?: Mock): string[] {
   if (!m) return [];
   switch (m.type) {
     case "roles": return [m.centre, ...m.roles];
+    case "vision": return m.callouts.flatMap((x) => [x.label, x.text]);
     case "flow": return [...m.steps.flatMap((x) => [x.label, x.detail]), ...m.facts];
     case "motions": return [m.header, ...m.items.flatMap((x) => [x.motion, x.test])];
     case "offer": return [...m.items.flatMap((x) => [x.title, x.text]), m.clarifier];
@@ -139,6 +140,13 @@ function mockText(m: Mock): string {
   switch (m.type) {
     case "lockup":
       out.push(`Voice chip: “${m.voice}”`);
+      break;
+    case "brand":
+      out.push(`Lockup: the greyer × STIHL`, `Rotating ring text (decoration): “${m.ring.trim()}”`, `Tag: ${m.tag}`);
+      break;
+    case "vision":
+      m.callouts.forEach((x, i) => out.push(`${i + 1}. **${x.label}**: ${x.text}`));
+      out.push("", `Tag: ${m.tag}`);
       break;
     case "roles":
       out.push(`Centre caption: ${m.centre}`, `Labels around the photo: ${m.roles.join(" · ")}`);

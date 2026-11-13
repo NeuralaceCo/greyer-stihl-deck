@@ -54,7 +54,7 @@
     "73": "orange on the top shelf"
   },
   "redos": 0,
-  "total_credits": 42,
+  "total_credits": 58,
   "finish": "Crops baked per slot, shared grade: curves lift 0.035, vignette 0.32, noise 3; WebP q82 in public/media/photos. No delogo needed.",
   "cap": {
     "note": "Brand/vision slides, requested 2026-11-13: cap on graphite (A) then STIHL-colour crew edition (B).",
@@ -66,6 +66,18 @@
       "B3": "ce6350c5-350c-44ba-bfd8-fb2509217394"
     },
     "credits": 10,
-    "pickA": "A1 f53efa0b"
+    "pickA": "A1 f53efa0b",
+    "pickB": "B2 59f1fc2d (best edge alignment with A1: SSIM 0.914 vs 0.903/0.906)",
+    "earPiece": "~75% x, ~64.5% y in both images"
+  },
+  "earpiece": {
+    "note": "Hero close-up of the ear piece on the crew cap, requested 2026-11-13.",
+    "credits": 6,
+    "jobs": {
+      "E1": "49c37836-b362-44f2-9084-61d400f58f03",
+      "E2": "e0443bf6-1926-4ed1-b854-b2615c058136",
+      "E3": "5635a2de-fa31-43de-bfe3-40728fb261ea"
+    },
+    "pick": "E2 e0443bf6 (module centred; E1 module sat on the brim)"
   }
 }

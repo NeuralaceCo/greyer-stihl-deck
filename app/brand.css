@@ -1,0 +1,376 @@
+/* The two brand slides: the collab title (1) and the vision (2). They sit on the silk background and are the
+   only place STIHL orange appears, on a concept cap and in the lockup, labelled as a concept render. */
+
+:root {
+  --stihl: #f37a1f;
+  --stihl-light: #ffe2c4;
+}
+
+/* ---------- Silk background (behind the stage, on slides 1–2 only) ---------- */
+
+.gs-silk {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s var(--ease-ui);
+}
+
+.dk[data-at="title"] .gs-silk,
+.dk[data-at="vision"] .gs-silk {
+  opacity: 1;
+}
+
+/* Slide 1 is the lockup, so the small one in the chrome steps aside. */
+.dk-top .gs-lockup {
+  transition: opacity 0.6s var(--ease-ui);
+}
+
+.dk[data-at="title"] .dk-top .gs-lockup {
+  opacity: 0;
+}
+
+/* ---------- 1 · Title ---------- */
+
+.gs-s1 {
+  position: absolute;
+  inset: 0;
+}
+
+.gs-s1-copy {
+  position: absolute;
+  left: 96px;
+  top: 0;
+  bottom: 0;
+  width: 860px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* The lockup: greyer wordmark, a turning ×, STIHL in orange caps. */
+.gs-bl {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 8px 0 48px;
+}
+
+.gs-bl-greyer {
+  display: block;
+  width: auto;
+  height: 82px;
+  filter: invert(1) brightness(1.2);
+}
+
+.gs-bl-x {
+  display: inline-block;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--bone-60);
+}
+
+.gs-bl-stihl {
+  position: relative;
+  display: inline-flex;
+  font-size: 116px;
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  color: var(--stihl);
+}
+
+.gs-bl-char {
+  display: inline-block;
+}
+
+/* A sheen that passes across the word now and then. */
+.gs-bl-shine {
+  position: absolute;
+  inset: 0;
+  color: transparent;
+  background-image: linear-gradient(105deg, transparent 38%, var(--stihl-light) 50%, transparent 62%);
+  background-size: 260% 100%;
+  background-position: 160% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+}
+
+.gs-s1-title {
+  font-size: 76px;
+}
+
+.gs-s1 .gs-body {
+  max-width: 680px;
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+.gs-s1-small {
+  position: absolute;
+  left: 96px;
+  bottom: 60px;
+  width: 780px;
+}
+
+.gs-s1-hero {
+  position: absolute;
+  left: 950px;
+  top: 100px;
+  width: 920px;
+  height: 920px;
+}
+
+.gs-s1-glow {
+  position: absolute;
+  inset: 14%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(243, 122, 31, 0.32), rgba(243, 122, 31, 0) 72%);
+  filter: blur(24px);
+}
+
+.gs-s1-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  animation: gs-spin 80s linear infinite;
+}
+
+.gs-s1-ring text {
+  font-family: var(--font-mono), monospace;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  fill: rgba(247, 246, 242, 0.5);
+}
+
+.gs-s1-capwrap {
+  position: absolute;
+  inset: 9%;
+  animation: gs-float 7s ease-in-out infinite;
+}
+
+.gs-s1-cap {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* The cap sits a little low and left in its frame: nudge it to the middle of the ring, and feather the edges
+   into the silk. */
+.gs-s1-cap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(4%, -7%) scale(1.18);
+  -webkit-mask-image: radial-gradient(closest-side at 46% 57%, #000 58%, transparent 100%);
+  mask-image: radial-gradient(closest-side at 46% 57%, #000 58%, transparent 100%);
+}
+
+.gs-s1-tag {
+  position: absolute;
+  right: 110px;
+  bottom: 60px;
+}
+
+/* ---------- 2 · The vision ---------- */
+
+.gs-sv {
+  position: absolute;
+  inset: 0;
+}
+
+.gs-s2v-copy {
+  position: absolute;
+  left: 96px;
+  top: 150px;
+  width: 700px;
+}
+
+.gs-s2v-title {
+  font-size: 80px;
+}
+
+.gs-s2v-body {
+  margin-top: 26px;
+  font-size: 27px;
+}
+
+.gs-v-callouts {
+  margin: 40px 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.gs-v-callouts li {
+  display: grid;
+  grid-template-columns: 56px 200px 1fr;
+  align-items: baseline;
+  padding: 18px 0;
+  border-top: 1px solid var(--line-dark);
+  font-size: 28px;
+}
+
+.gs-v-callouts span {
+  font-family: var(--font-mono), monospace;
+  font-size: 18px;
+  color: var(--signal);
+}
+
+.gs-v-callouts b {
+  font-weight: 500;
+}
+
+.gs-v-callouts i {
+  font-style: normal;
+  color: var(--bone-80);
+}
+
+.gs-s2v-small {
+  position: absolute;
+  left: 96px;
+  bottom: 60px;
+  width: 700px;
+}
+
+/* The cap stage: feathered into the silk on every side. */
+.gs-v-stage {
+  position: absolute;
+  left: 840px;
+  top: 60px;
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
+  -webkit-mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 70%, transparent 100%);
+}
+
+/* The default is the finished state (pushed in, close-up showing), so less motion lands there. */
+.gs-v-zoom {
+  position: absolute;
+  inset: 0;
+  transform-origin: 75% 64.5%;
+  transform: translate(-250px, -145px) scale(2.4);
+}
+
+.gs-v-zoom img,
+.gs-v-ear {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gs-v-crew {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+/* A band of orange light that carries the colour change across the cap. */
+.gs-v-sweep {
+  position: absolute;
+  top: -10%;
+  bottom: -10%;
+  left: 0;
+  width: 38%;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(243, 122, 31, 0) 0%, rgba(243, 122, 31, 0.5) 42%, rgba(255, 226, 196, 0.85) 50%, rgba(243, 122, 31, 0.5) 58%, rgba(243, 122, 31, 0) 100%);
+  mix-blend-mode: screen;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+/* Alia is listening: signal rings from the ear piece in the close-up. */
+.gs-v-rings {
+  position: absolute;
+  left: 52.5%;
+  top: 55%;
+  width: 0;
+  height: 0;
+}
+
+.gs-v-rings i {
+  position: absolute;
+  left: -120px;
+  top: -120px;
+  width: 240px;
+  height: 240px;
+  border: 2px solid var(--signal);
+  border-radius: 50%;
+  opacity: 0;
+  animation: gs-ring 3s var(--ease-reveal) infinite;
+}
+
+.gs-v-rings i:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.gs-v-rings i:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes gs-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gs-float {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes gs-ring {
+  0% {
+    transform: scale(0.55);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gs-silk {
+    transition: none;
+  }
+
+  .gs-s1-ring,
+  .gs-s1-capwrap {
+    animation: none;
+  }
+
+  .gs-v-rings i {
+    animation: none;
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  .gs-v-rings i:nth-child(2) {
+    transform: scale(1.5);
+    opacity: 0.35;
+  }
+
+  .gs-v-rings i:nth-child(3) {
+    display: none;
+  }
+}

@@ -4,6 +4,7 @@ import "./globals.css";
 import "./mock.css";
 import "./slides.css";
 import "./slides-more.css";
+import "./brand.css";
 
 /* Greyer's own faces: Asta Sans for everything, Geist Mono for facts and states, Instrument Sans for UI. */
 const sans = Asta_Sans({ subsets: ["latin"], variable: "--font-sans", display: "swap" });

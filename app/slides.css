@@ -1,6 +1,5 @@
 /* Slide layouts, in stage pixels on the 1920 x 1080 frame. The chrome takes the top 120px. */
 
-.gs-s1,
 .gs-s3,
 .gs-s8,
 .gs-ph {
@@ -8,80 +7,7 @@
   inset: 0;
 }
 
-/* ---------- 1 · Title ---------- */
-
-.gs-s1-copy {
-  position: absolute;
-  left: 96px;
-  top: 0;
-  bottom: 0;
-  width: 940px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 40px;
-}
-
-.gs-s1-title {
-  font-size: var(--fs-display);
-  line-height: 0.98;
-  white-space: nowrap;
-}
-
-.gs-s1 .gs-body {
-  max-width: 700px;
-  margin-top: 40px;
-  font-size: 30px;
-}
-
-.gs-s1-small {
-  position: absolute;
-  left: 96px;
-  bottom: 64px;
-  width: 760px;
-}
-
-.gs-s1-photo {
-  position: absolute;
-  left: 960px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 0;
-}
-
-/* The photo melts into the graphite on its left edge, and darkens under the chrome. */
-.gs-s1-photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, var(--graphite) 0%, rgba(20, 21, 22, 0) 22%),
-    linear-gradient(180deg, rgba(20, 21, 22, 0.55) 0%, rgba(20, 21, 22, 0) 16%);
-  pointer-events: none;
-}
-
-.gs-s1-photo img {
-  object-position: 50% 30%;
-}
-
-.gs-s1-photo figcaption {
-  left: 120px;
-  right: 60px;
-  bottom: 60px;
-  top: auto;
-  max-width: 600px;
-}
-
-.gs-s1-voice {
-  position: absolute;
-  left: 1080px;
-  top: 470px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
-}
+/* Slide 1 lives in app/brand.css. */
 
 /* ---------- 3 · Proof ---------- */
 

@@ -11,6 +11,10 @@ import { useGSAP } from "@gsap/react";
 import type { Slide } from "../content/deck";
 import { viewFor } from "./slides";
 import Lockup from "./Lockup";
+import { createSilk } from "./silk";
+
+/* Slides that sit on the silk background. */
+const SILK = new Set(["title", "vision"]);
 
 gsap.registerPlugin(useGSAP);
 gsap.defaults({ overwrite: "auto" });
@@ -64,6 +68,7 @@ export default function Deck({ slides, chapters, questions, channel: channelName
   const LAST = slides.length - 1;
   const starts = chapters.map((_, i) => slides.findIndex((s) => s.chapter === i));
   const root = useRef<HTMLElement>(null);
+  const canvas = useRef<HTMLCanvasElement>(null);
   const go = useRef<(to: number) => void>(() => {});
   const at = useRef(0);
   const channel = useRef<BroadcastChannel | null>(null);
@@ -77,9 +82,18 @@ export default function Deck({ slides, chapters, questions, channel: channelName
       const els = gsap.utils.toArray<HTMLElement>(".dk-slide", el);
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      const fit = () => el.style.setProperty("--s", String(Math.min(window.innerWidth / 1920, window.innerHeight / 1080)));
+      const silk = canvas.current ? createSilk(canvas.current) : null;
+      const draw = () => {
+        if (silk && SILK.has(slides[at.current].id)) silk.render(gsap.ticker.time);
+      };
+      const fit = () => {
+        el.style.setProperty("--s", String(Math.min(window.innerWidth / 1920, window.innerHeight / 1080)));
+        silk?.resize();
+        draw();
+      };
       fit();
       window.addEventListener("resize", fit);
+      if (!reduce) gsap.ticker.add(draw);
 
       const start = readHash(LAST);
       at.current = start;
@@ -107,6 +121,7 @@ export default function Deck({ slides, chapters, questions, channel: channelName
           gsap.set(a, { autoAlpha: 0 });
           gsap.set(b, { autoAlpha: 1 });
           settle(b);
+          draw();
           return;
         }
         /* Between a light and a dark slide the page colour crossfades (CSS) while the words swap. */
@@ -124,6 +139,7 @@ export default function Deck({ slides, chapters, questions, channel: channelName
       return () => {
         window.removeEventListener("resize", fit);
         window.removeEventListener("hashchange", onHash);
+        gsap.ticker.remove(draw);
       };
     },
     { scope: root },
@@ -204,6 +220,7 @@ export default function Deck({ slides, chapters, questions, channel: channelName
 
   return (
     <main ref={root} className="dk" data-tone={tone} data-at={slide.id} onPointerDown={onDown} onPointerUp={onUp} onPointerCancel={() => (swipe.current = null)}>
+      <canvas ref={canvas} className="gs-silk" aria-hidden="true" />
       <div className="dk-stage">
         <div className="dk-progress" style={{ transform: `scaleX(${index / LAST})` }} />
 
