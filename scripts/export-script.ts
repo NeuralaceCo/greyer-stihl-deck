@@ -92,8 +92,9 @@ for (const s of SLIDES.filter((x) => x.title.startsWith("Scene"))) {
 const has = (pred: (s: Slide) => boolean) => SLIDES.findIndex(pred);
 const bilingual = has((s) => lines(s.mock).some((l) => "lang" in l && l.lang === "ES"));
 const notes = has((s) => s.mock?.type === "notes");
-const messaging = has((s) => s.mock?.type === "chat" && (s.mock.channel === "WhatsApp" || s.mock.channel === "iMessage"));
-const email = has((s) => s.mock?.type === "notes" && !!s.mock.email);
+const isMsg = (c?: string) => c === "WhatsApp" || c === "iMessage";
+const messaging = has((s) => (s.mock?.type === "chat" && isMsg(s.mock.channel)) || (s.mock?.type === "fragments" && s.mock.items.some((f) => isMsg(f.channel))));
+const email = has((s) => (s.mock?.type === "notes" && !!s.mock.email) || (s.mock?.type === "chat" && s.mock.channel === "Email"));
 const schedule = has((s) => s.mock?.type === "schedule");
 check(bilingual >= 0 && notes >= 0 && messaging >= 0 && email >= 0 && schedule >= 0, "a use-case category is missing");
 check(messaging < email, "messaging must come before email");

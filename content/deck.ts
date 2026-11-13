@@ -303,11 +303,11 @@ export const SLIDES: Slide[] = [
       body: "Ryan says it once in English. Alia drafts it in Spanish. Ryan approves it, then walks the flag line with Javier before anyone cuts.",
     },
     visual:
-      "Light slide. Left column: the copy, then a photo of Ryan and Javier walking a line of marker flags at the edge of a yard, a large oak behind them, all tools off and on the ground. Centre: the primary mock, a crew thread in generic bubbles with the spoken request at the top; the presenter approves the Spanish draft live. Right: two smaller cards, the toolbox talk and the dealer message.",
+      "Light slide. Left column: the copy, then a photo of Ryan and Javier walking a line of marker flags at the edge of a yard, a large oak behind them, all tools off and on the ground. Centre: the primary mock, an email to the crew in generic bubbles with the spoken request at the top; the presenter approves the Spanish draft live. Right: two smaller cards, the toolbox talk and the dealer message.",
     mock: {
       type: "chat",
-      spoken: "Text the crew in Spanish: the oak stays. Clear only inside the flags. I'll walk the line with Javier first.",
-      channel: "WhatsApp",
+      spoken: "Email the crew in Spanish: the oak stays. Clear only inside the flags. I'll walk the line with Javier first.",
+      channel: "Email",
       thread: "Holt job · crew",
       lines: [
         {
@@ -315,7 +315,7 @@ export const SLIDES: Slide[] = [
           to: "Holt job · crew",
           lang: "ES",
           text: "Equipo: el roble se queda, no lo toquen. Solo limpiamos dentro de las banderitas. Antes de empezar, reviso la línea con Javier.",
-          approval: { state: "sent", by: "Ryan", at: "7:05", via: "WhatsApp" },
+          approval: { state: "sent", by: "Ryan", at: "7:05", via: "Email" },
         },
         { kind: "step", text: "In person, 7:10: Ryan and Javier walk the flag line before any cutting." },
         { kind: "in", from: "Javier", lang: "ES", text: "Entendido. ¿Y el arbusto junto a la cerca? ¿También se queda?" },
@@ -349,7 +349,7 @@ export const SLIDES: Slide[] = [
     notes:
       "Here's the core scene. Ryan speaks English; his crew's first language is Spanish. He says it once. Alia drafts it in natural Spanish, and Ryan approves it. Because this is a work boundary, he walks the flag line with Javier before anyone starts. When Javier asks a question back, Ryan gets an English version to check before he answers the homeowner.",
     small:
-      "Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor.",
+      "Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor. Email drafting is opt-in.",
   },
   {
     n: 9,
@@ -476,7 +476,7 @@ export const SLIDES: Slide[] = [
           time: "12:30",
           text: "Crew meets at the shop",
           state: "approved",
-          message: { to: "Holt job · crew", lang: "ES", text: "Por la lluvia, empezamos en casa de Holt a la 1:00. Nos vemos en el taller a las 12:30.", approval: { state: "sent", by: "Ryan", at: "6:48", via: "WhatsApp" } },
+          message: { to: "Holt job · crew", lang: "ES", text: "Por la lluvia, empezamos en casa de Holt a la 1:00. Nos vemos en el taller a las 12:30.", approval: { state: "sent", by: "Ryan", at: "6:48", via: "Email" } },
         },
         {
           time: "1:00",
@@ -489,7 +489,7 @@ export const SLIDES: Slide[] = [
       ],
     },
     notes:
-      "Rain days break everything at once. Ryan tells Alia what he knows: rain until noon. Alia proposes moving Holt to one o'clock, drafts the English text to Karen and the Spanish text to the crew, and suggests a dealer drop-off that doesn't clash with the Patel estimate. Ryan approves the messages. The dealer time stays a request until the dealer confirms.",
+      "Rain days break everything at once. Ryan tells Alia what he knows: rain until noon. Alia proposes moving Holt to one o'clock, drafts the English text to Karen and the Spanish email to the crew, and suggests a dealer drop-off that doesn't clash with the Patel estimate. Ryan approves the messages. The dealer time stays a request until the dealer confirms.",
     small: "Uses the conditions the lead states and the calendar already on the phone. No live weather, no dealer booking and no automatic calendar changes.",
   },
   {

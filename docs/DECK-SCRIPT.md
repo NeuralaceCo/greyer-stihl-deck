@@ -172,17 +172,17 @@ Kicker: On the job · Bilingual crew
 Headline: **Spanish crew. English homeowner. One lead.**  
 Body: Ryan says it once in English. Alia drafts it in Spanish. Ryan approves it, then walks the flag line with Javier before anyone cuts.
 
-**Visual direction.** Light slide. Left column: the copy, then a photo of Ryan and Javier walking a line of marker flags at the edge of a yard, a large oak behind them, all tools off and on the ground. Centre: the primary mock, a crew thread in generic bubbles with the spoken request at the top; the presenter approves the Spanish draft live. Right: two smaller cards, the toolbox talk and the dealer message.
+**Visual direction.** Light slide. Left column: the copy, then a photo of Ryan and Javier walking a line of marker flags at the edge of a yard, a large oak behind them, all tools off and on the ground. Centre: the primary mock, an email to the crew in generic bubbles with the spoken request at the top; the presenter approves the Spanish draft live. Right: two smaller cards, the toolbox talk and the dealer message.
 
 **Mock / screen content**
 
 Labelled on the slide: _Illustrative mockup_
 
-Spoken request: “Text the crew in Spanish: the oak stays. Clear only inside the flags. I'll walk the line with Javier first.”
+Spoken request: “Email the crew in Spanish: the oak stays. Clear only inside the flags. I'll walk the line with Javier first.”
 
-Thread: Holt job · crew · via WhatsApp
+Thread: Holt job · crew · via Email
 - **Alia draft → Holt job · crew** (ES): “Equipo: el roble se queda, no lo toquen. Solo limpiamos dentro de las banderitas. Antes de empezar, reviso la línea con Javier.”  
-  _Approved by Ryan · 7:05 → Sent via WhatsApp_
+  _Approved by Ryan · 7:05 → Sent via Email_
 - _In person, 7:10: Ryan and Javier walk the flag line before any cutting._
 - **Javier** (ES, incoming): “Entendido. ¿Y el arbusto junto a la cerca? ¿También se queda?”
 - **English version for Ryan to review before he answers Karen** (EN) · _Proposed demo workflow_: “Got it. And the bush by the fence, does that stay too?”
@@ -200,7 +200,7 @@ Secondary · Dealer contact in Spanish, office copy in English · via WhatsApp
 
 **Speaker notes** (61 words). Here's the core scene. Ryan speaks English; his crew's first language is Spanish. He says it once. Alia drafts it in natural Spanish, and Ryan approves it. Because this is a work boundary, he walks the flag line with Javier before anyone starts. When Javier asks a question back, Ryan gets an English version to check before he answers the homeowner.
 
-**Small print.** Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor.
+**Small print.** Alia drafts translations for the lead to review. It is not live interpretation, not a certified translation, and not a substitute for a bilingual supervisor. Email drafting is opt-in.
 
 ## 9. Scene — Capture it before the detail disappears
 
@@ -305,7 +305,7 @@ After (revised plan for today · review):
 - 10:30 Trimmer drop-off at the dealer · **requested** · _Proposed demo workflow_ — Asked the dealer. Not confirmed yet.
 - 12:30 Crew meets at the shop · **approved**
   - Message → Holt job · crew (ES): “Por la lluvia, empezamos en casa de Holt a la 1:00. Nos vemos en el taller a las 12:30.”  
-    _Approved by Ryan · 6:48 → Sent via WhatsApp_
+    _Approved by Ryan · 6:48 → Sent via Email_
 - 1:00 Holt job, moved from 8:00 · **proposed** — Stays proposed until Karen confirms.
   - Message → Karen Holt (EN): “Hi Karen, it's Ryan. Rain this morning, so we'd like to start at 1:00 today instead of 8:00. Does that still work?”  
     _Approved by Ryan · 6:47 → Sent via iMessage_
@@ -313,7 +313,7 @@ After (revised plan for today · review):
 
 Legend: Proposed (dashed) · Approved by the lead (green) · Requested (outline + clock) · Confirmed (solid) · Messages: draft → approved → sent
 
-**Speaker notes** (61 words). Rain days break everything at once. Ryan tells Alia what he knows: rain until noon. Alia proposes moving Holt to one o'clock, drafts the English text to Karen and the Spanish text to the crew, and suggests a dealer drop-off that doesn't clash with the Patel estimate. Ryan approves the messages. The dealer time stays a request until the dealer confirms.
+**Speaker notes** (61 words). Rain days break everything at once. Ryan tells Alia what he knows: rain until noon. Alia proposes moving Holt to one o'clock, drafts the English text to Karen and the Spanish email to the crew, and suggests a dealer drop-off that doesn't clash with the Patel estimate. Ryan approves the messages. The dealer time stays a request until the dealer confirms.
 
 **Small print.** Uses the conditions the lead states and the calendar already on the phone. No live weather, no dealer booking and no automatic calendar changes.
 
@@ -477,7 +477,7 @@ Headline: **Customer detail and operating boundaries**
 - [ ] Spanish drafts from English voice (slides 8, 10 and 11): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).
 - [ ] An English version of an incoming Spanish message (slide 8, labelled Proposed demo workflow): confirm it exists, or keep the label.
 - [ ] Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 6, 8 and 10).
-- [ ] Drafting into a WhatsApp group thread (slide 8, "Holt job · crew").
+- [ ] Drafting an email to the whole crew (slides 8 and 11, "Holt job · crew"), in Spanish, with email drafting switched on.
 - [ ] Sorting one voice note into punch list, materials, change order and tool service (slide 9, labelled Proposed demo workflow).
 - [ ] Notes showing up in the next morning's brief (slide 9). The brief covers notes; confirm nothing on the slide implies how or when it is built.
 - [ ] Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 11, labelled Proposed demo workflow).

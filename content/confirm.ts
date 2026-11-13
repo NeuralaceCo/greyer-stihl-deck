@@ -8,7 +8,7 @@ export const CONFIRM: { area: string; items: string[] }[] = [
       "Spanish drafts from English voice (slides 8, 10 and 11): confirm the quality on jobsite words (flags, beds, trimmer, mulch, HOA).",
       "An English version of an incoming Spanish message (slide 8, labelled Proposed demo workflow): confirm it exists, or keep the label.",
       "Reading incoming iMessage and WhatsApp messages and drafting replies to them (slides 6, 8 and 10).",
-      "Drafting into a WhatsApp group thread (slide 8, \"Holt job · crew\").",
+      "Drafting an email to the whole crew (slides 8 and 11, \"Holt job · crew\"), in Spanish, with email drafting switched on.",
       "Sorting one voice note into punch list, materials, change order and tool service (slide 9, labelled Proposed demo workflow).",
       "Notes showing up in the next morning's brief (slide 9). The brief covers notes; confirm nothing on the slide implies how or when it is built.",
       "Proposing a moved job and suggesting a dealer slot that avoids booked work (slide 11, labelled Proposed demo workflow).",
