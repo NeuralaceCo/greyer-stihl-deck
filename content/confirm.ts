@@ -18,14 +18,13 @@ export const CONFIRM: { area: string; items: string[] }[] = [
     ],
   },
   {
-    area: "Pilot terms",
+    area: "Commercial options (slide 13)",
     items: [
-      "Kit count: 10 or 20. With 10, the deck already describes a first cohort of 10.",
-      "About 90 days of access: terms, cost, and who pays for kits and access.",
-      "Every participant needs an iPhone, since Greyer is iOS only.",
-      "Cap sizes and colours for the kits.",
-      "Which dealer cluster, and who at Greyer runs the weekly check-ins.",
-      "What happens to kits and accounts when the pilot ends.",
+      "Co-branded edition: STIHL's approval of the colourway and lockup, who makes and sells a crew-edition cap, and the terms.",
+      "White label: what a STIHL-branded cap and app would take (branding, app listing, support) and whether Greyer can offer it.",
+      "Alia on its own: how STIHL would offer the app without the cap, and pricing.",
+      "Every user needs an iPhone, since Greyer is iOS only.",
+      "Who supports crews day to day under each option.",
     ],
   },
   {
@@ -40,22 +39,12 @@ export const CONFIRM: { area: string; items: string[] }[] = [
     ],
   },
   {
-    area: "Measurement",
-    items: [
-      "Baseline method before access starts (for example, a week of participant-reported counts and cycle times).",
-      "How \"user-approved drafts sent\" is counted where verifiable: app records the participant agrees to share, or self-report.",
-      "How the two cycle times are timed: walkthrough to quote draft, and schedule change to approved update.",
-      "Success thresholds, agreed with STIHL before launch.",
-      "Who owns the pilot data, and what STIHL and the dealer see (aggregate only?).",
-    ],
-  },
-  {
     area: "Privacy",
     items: [
-      "A data-handling review before the pilot. No policies are presented in the deck.",
+      "A data-handling review before any rollout. No policies are presented in the deck.",
       "Crew and homeowner messages pass through Alia: notice and consent, in Spanish for Spanish-speaking crews.",
-      "Voice capture and recording-consent rules in the pilot's state or states.",
-      "Retention and deletion at the end of the pilot.",
+      "Voice capture and recording-consent rules in each state where crews would use it.",
+      "Retention and deletion terms under each option, and who owns the data and what STIHL sees.",
     ],
   },
   {

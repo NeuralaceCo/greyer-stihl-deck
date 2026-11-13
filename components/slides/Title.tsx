@@ -7,7 +7,7 @@ import { Body, Kicker, Small, Title as Headline, useOnActive, type ViewProps } f
 const RING_R = 430;
 const RING_C = 2 * Math.PI * RING_R;
 
-/* Slide 1: the collab, front and centre. The greyer wordmark, a turning ×, and STIHL in orange whose letters
+/* Slides 1 and 14: the collab, front and centre (the close shows the crew edition). The greyer wordmark, a turning ×, and STIHL in orange whose letters
    blur into focus and then catch a passing sheen; the cap floats on the silk, tilts toward the pointer and is
    ringed by slowly rotating text. Effects in the spirit of React Bits (BlurText, ShinyText, CircularText,
    TiltedCard), written as our own GSAP and CSS. */
@@ -84,7 +84,7 @@ export default function TitleSlide({ slide, active }: ViewProps) {
         </svg>
         <div className="gs-s1-capwrap">
           <div className="gs-s1-cap" ref={cap}>
-            <img src="/media/cap-greyer.webp" alt="" width={2048} height={2048} />
+            <img src={brand?.cap ?? "/media/cap-greyer.webp"} alt="" width={2048} height={2048} />
           </div>
         </div>
       </div>

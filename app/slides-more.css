@@ -364,7 +364,7 @@
 .gs-motions td { font-size: 27px; line-height: 1.35; color: var(--ink-80); }
 .gs-s10-small { position: absolute; left: 816px; right: 96px; bottom: 60px; font-size: 19px; }
 
-/* ---------- 11 · The offer ---------- */
+/* ---------- Ways to work together (offer layout) ---------- */
 
 .gs-s11-head { position: absolute; left: 96px; top: 150px; width: 1200px; }
 .gs-s11-title { font-size: 84px; }
@@ -373,7 +373,7 @@
   position: absolute;
   left: 96px;
   right: 96px;
-  top: 540px;
+  top: 320px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -382,123 +382,50 @@
   list-style: none;
 }
 
+/* Each option's picture sits in a band of the same height, so the titles line up. */
+.gs-offer-art {
+  display: flex;
+  align-items: center;
+  height: 190px;
+  margin: 14px 0 6px;
+}
+
+.gs-offer-art img {
+  display: block;
+  width: auto;
+  height: 300px;
+  margin: -40px 0 -50px -52px;
+  -webkit-mask-image: radial-gradient(closest-side at 46% 57%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(closest-side at 46% 57%, #000 55%, transparent 100%);
+}
+
+.gs-offer-art em {
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--stihl, #f37a1f);
+}
+
+.gs-offer-art .gs-wave {
+  width: 120px;
+  height: 120px;
+  gap: 7px;
+}
+
+.gs-offer-art .gs-wave i {
+  width: 7px;
+  height: 46px;
+  border-radius: 4px;
+}
+
 .gs-offer li { padding: 30px 34px 36px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); }
 .gs-offer span { font-family: var(--font-mono), monospace; font-size: 52px; line-height: 1; }
 .gs-offer b { display: block; margin: 22px 0 10px; font-size: 40px; font-weight: 400; letter-spacing: -0.02em; }
 .gs-offer p { margin: 0; font-size: 26px; line-height: 1.4; color: var(--ink-80); }
-.gs-clarifier { position: absolute; left: 96px; top: 880px; margin: 0; font-size: 30px; }
+.gs-clarifier { position: absolute; left: 96px; top: 860px; margin: 0; font-size: 30px; }
 .gs-s11-small { position: absolute; left: 96px; bottom: 60px; }
-
-/* ---------- 12 · The pilot ---------- */
-
-.gs-s12-head { position: absolute; left: 96px; top: 150px; width: 1500px; }
-.gs-s12-title { font-size: 76px; }
-
-.gs-timeline { position: absolute; left: 96px; right: 96px; top: 370px; }
-
-.gs-tl-bar {
-  position: relative;
-  height: 72px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--r);
-  background: var(--card);
-}
-
-.gs-tl-base,
-.gs-tl-window {
-  position: absolute;
-  top: 6px;
-  bottom: 6px;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  font-family: var(--font-mono), monospace;
-  font-size: 18px;
-}
-
-/* About a week of baseline, then four weeks measured: roughly days 7 to 35 of 90. */
-.gs-tl-base {
-  left: 6px;
-  width: calc(7.8% - 8px);
-  justify-content: center;
-  background-image: repeating-linear-gradient(135deg, transparent 0 8px, rgba(40, 40, 40, 0.09) 8px 9px);
-  color: var(--ink-80);
-}
-
-.gs-tl-window {
-  left: 7.8%;
-  width: 31.1%;
-  padding: 0 20px;
-  background: var(--ink);
-  color: var(--bone);
-}
-
-/* A bracket under the whole bar: the ~90-day access period. */
-.gs-tl-access {
-  position: relative;
-  margin: 10px 0 0;
-  padding-top: 22px;
-  font-family: var(--font-mono), monospace;
-  font-size: 20px;
-  text-align: center;
-  color: var(--ink-80);
-}
-
-.gs-tl-access::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 14px;
-  border: 1.5px solid var(--ink-60);
-  border-top: 0;
-  border-radius: 0 0 8px 8px;
-}
-
-.gs-cohort { position: absolute; left: 96px; right: 96px; top: 560px; display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
-.gs-cohort b { font-size: 34px; font-weight: 400; letter-spacing: -0.02em; }
-.gs-mix { display: flex; flex-wrap: wrap; gap: 10px; }
-.gs-mix i { padding: 8px 18px; border: 1px solid var(--line-strong); border-radius: var(--r-pill); font-size: 22px; font-style: normal; }
-
-.gs-metrics {
-  position: absolute;
-  left: 96px;
-  right: 96px;
-  top: 660px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.gs-metrics li { padding: 22px 26px 26px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); font-size: 26px; line-height: 1.3; }
-.gs-metrics span { display: block; margin-bottom: 10px; font-family: var(--font-mono), monospace; font-size: 16px; color: var(--ink-60); }
-.gs-cadence { position: absolute; left: 96px; right: 96px; top: 860px; margin: 0; font-size: 28px; }
-.gs-s12-small { position: absolute; left: 96px; right: 96px; bottom: 50px; max-width: none; font-size: 18px; }
-
-/* ---------- 13 · The ask ---------- */
-
-.gs-s13-head { position: absolute; left: 96px; top: 150px; width: 1500px; }
-.gs-s13-title { font-size: 84px; }
-
-.gs-asks { position: absolute; left: 96px; right: 96px; top: 450px; margin: 0; padding: 0; list-style: none; }
-.gs-asks li { display: grid; grid-template-columns: 96px 1fr; align-items: baseline; padding: 26px 0; border-top: 1px solid var(--line-dark); }
-.gs-asks span { font-family: var(--font-mono), monospace; font-size: 22px; color: var(--bone-60); }
-.gs-asks p { margin: 0; font-size: 46px; line-height: 1.15; letter-spacing: -0.02em; }
-
-.gs-date {
-  display: inline-block;
-  margin-left: 6px;
-  padding: 0 16px 4px;
-  border: 1.5px dashed var(--bone-60);
-  border-radius: var(--r);
-  font-style: normal;
-}
-
-.gs-gate { position: absolute; left: 96px; right: 96px; top: 880px; margin: 0; font-family: var(--font-mono), monospace; font-size: 26px; color: var(--bone-80); }
 
 /* ---------- 14 · Appendix ---------- */
 

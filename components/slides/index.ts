@@ -11,7 +11,7 @@ import Bilingual from "./Bilingual";
 import Capture from "./Capture";
 import Messages from "./Messages";
 import Rain from "./Rain";
-import { Appendix, Ask, Offer, Pilot, WhyStihl } from "./Partner";
+import { Appendix, Offer, WhyStihl } from "./Partner";
 import Placeholder from "./Placeholder";
 
 /* Slide id → its layout. A slide without one shows its copy plainly. */
@@ -28,9 +28,8 @@ const BUILT: Record<string, ComponentType<ViewProps>> = {
   "draft-approve": Messages,
   rain: Rain,
   "why-stihl": WhyStihl,
-  offer: Offer,
-  pilot: Pilot,
-  ask: Ask,
+  together: Offer,
+  close: TitleSlide,
   appendix: Appendix,
 };
 

@@ -27,7 +27,7 @@ export type Mini = { title: string; channel: Channel; lines: ChatLine[] };
 export type Mock =
   | { type: "lockup"; voice: string }
   /* Slide 1: the collab lockup and the cap, ringed by rotating text. The ring is decoration, not copy. */
-  | { type: "brand"; ring: string; tag: string }
+  | { type: "brand"; ring: string; tag: string; cap?: string }
   /* Slide 2: the cap becomes a crew edition, then the camera goes to the ear piece. */
   | { type: "vision"; callouts: { label: string; text: string }[]; tag: string }
   /* Slide 3: who we are, in two numbers. */
@@ -62,9 +62,8 @@ export type Mock =
       }[];
     }
   | { type: "motions"; header: string; items: { motion: string; test: string }[] }
-  | { type: "offer"; items: { n: string; title: string; text: string }[]; clarifier: string }
-  | { type: "pilot"; access: string; window: string; cohort: string; mix: string[]; metrics: string[]; cadence: string }
-  | { type: "ask"; items: string[]; gate: string }
+  /* Cards with a short title and line; each can carry a small picture (the crew cap, a wordmark, a waveform). */
+  | { type: "offer"; items: { n: string; title: string; text: string; art?: "cap" | "wordmark" | "wave" }[]; clarifier: string }
   | {
       type: "appendix";
       groups: { title: string; rows: { name: string; business: string }[] }[];
@@ -95,7 +94,7 @@ export type Slide = {
   small?: string;
 };
 
-export const CHAPTERS = ["Customer", "Greyer", "On the job", "Pilot", "Appendix"];
+export const CHAPTERS = ["Customer", "Greyer", "On the job", "Together", "Appendix"];
 
 /* The people in the mocks are made up. */
 export const CAST = {
@@ -115,17 +114,17 @@ export const SLIDES: Slide[] = [
     title: "Title — Hands on the tool. Office in the cap.",
     kind: "dark",
     chapter: -1,
-    takeaway: "Greyer proposes a jobsite demo and a small crew-lead pilot, built around the cap and the crews STIHL already equips.",
+    takeaway: "Greyer proposes working together around the cap and the crews STIHL already equips, with the shape of it left open.",
     copy: {
       kicker: "A proposal for STIHL Commercial Solutions",
       headline: "Hands on the tool. Office in the cap.",
-      body: "Greyer's voice-first cap and app, around the crews STIHL already equips. A jobsite demo first, then a small crew-lead pilot.",
+      body: "Greyer's voice-first cap and app, around the crews STIHL already equips, and a few ways we could build on it together.",
     },
     visual:
       "Dark slide over a slow silk background: graphite folds with STIHL orange catching the light toward the lower right. Left: the collab lockup at display size (the greyer wordmark in white, a thin ×, STIHL in bold caps in STIHL orange with a sheen passing across it), its letters blurring into focus one by one; under it the anchor line and one line of body. Right: the Greyer cap rendered on graphite, floating gently and tilting toward the pointer, ringed by slowly rotating text. A 'Concept render' tag. STIHL is set as text in our type, not their logo.",
     mock: { type: "brand", ring: "Hands on the tool · Office in the cap · Greyer × STIHL · ", tag: "Concept render" },
     notes:
-      "Thanks for the time. One idea today: the person whose hands are on your tools is also running the office for the job. Greyer gives them a voice-first way to handle the texts, notes and scheduling. STIHL stays the tool, the dealer, the service and the parts. We're asking for two things: a jobsite demo, then a small pilot with one dealer cluster.",
+      "Thanks for the time. One idea today: the person whose hands are on your tools is also running the office for the job. Greyer gives them a voice-first way to handle the texts, notes and scheduling. STIHL stays the tool, the dealer, the service and the parts. At the end we'll show a few shapes this could take, and leave the choice open.",
     small: "A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer. Concept render; colours for discussion only.",
   },
   {
@@ -190,7 +189,7 @@ export const SLIDES: Slide[] = [
     copy: {
       kicker: "Shared customer",
       headline: "The person running the crew is also running the office.",
-      body: "Greyer's commercial buyers today are owners, presidents and founders. The pilot tests the next step: the crew lead in the field.",
+      body: "Greyer's commercial buyers today are owners, presidents and founders. The next step is the crew lead in the field.",
     },
     visual:
       "Light slide. Headline across the top, the body under it on the left. Left: the four jobs as a numbered list (Tool work · Crew coordination · Homeowner updates · Dealer follow-up), each with a hairline running across to the photo. Right: a large photo of an owner-operator / crew lead with two crew members loading gear, every tool switched off. Caption under the photo in mono: Crew lead / owner-operator.",
@@ -200,7 +199,7 @@ export const SLIDES: Slide[] = [
       roles: ["Tool work", "Crew coordination", "Homeowner updates", "Dealer follow-up"],
     },
     notes:
-      "On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's exactly what the pilot would test.",
+      "On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's the next step we'd like to explore with you.",
   },
   {
     n: 5,
@@ -212,7 +211,7 @@ export const SLIDES: Slide[] = [
     copy: {
       kicker: "Proof of overlap",
       headline: "7 of 11 substantial commercial buyers are construction-related.",
-      body: "Building trades, sitework, building energy and utility work. STIHL serves construction and utilities through Pro Dealers. This is overlap, not proof of STIHL use or pilot results.",
+      body: "Building trades, sitework, building energy and utility work. STIHL serves construction and utilities through Pro Dealers. This is overlap, not proof of STIHL use.",
     },
     visual:
       "Light slide, type only. Left: 64% at the largest size on the deck, with 7 of 11 under it in Geist Mono. Right: the seven buyers as text wordmarks in Asta Sans, each with its business in mono beneath, in a two-column list on white 12px cards. No customer logos. The footnote sits under the stat at a readable size.",
@@ -231,7 +230,7 @@ export const SLIDES: Slide[] = [
       ],
     },
     notes:
-      "Of Greyer's eleven substantial commercial buyers, seven are construction, building, sitework or utility firms. That's sixty-four percent. These are operating companies, not teachers, newspapers or solo brands. To be clear about what this shows: overlap with the construction and utility customers your Pro Dealers serve. It doesn't show these firms use STIHL, and it isn't a pilot result.",
+      "Of Greyer's eleven substantial commercial buyers, seven are construction, building, sitework or utility firms. That's sixty-four percent. These are operating companies, not teachers, newspapers or solo brands. To be clear about what this shows: overlap with the construction and utility customers your Pro Dealers serve. It doesn't show these firms use STIHL.",
     small:
       "Base: 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Customer details are supplied by Greyer and not independently verified.",
   },
@@ -498,16 +497,16 @@ export const SLIDES: Slide[] = [
     title: "Why STIHL — The dealer already sits inside this workday",
     kind: "dark",
     chapter: 3,
-    takeaway: "Greyer fits around motions STIHL dealers already run, and each fit is a hypothesis the pilot can test.",
+    takeaway: "Greyer fits around motions STIHL dealers already run, and each fit is worth exploring together, not a claimed result.",
     copy: {
       kicker: "Why STIHL",
       headline: "The dealer already sits inside this workday.",
     },
     visual:
-      "Light slide. Left: a photo of a generic outdoor-power-equipment dealer counter (unbranded, no STIHL logos or orange-and-white products), with a crew lead and a counter person talking. Right: four rows, each pairing an existing STIHL motion with its line under a mono column head, 'Pilot hypothesis'. The small print under the rows says these are hypotheses, not results, at body size.",
+      "Light slide. Left: a photo of a generic outdoor-power-equipment dealer counter (unbranded, no STIHL logos or orange-and-white products), with a crew lead and a counter person talking. Right: four rows, each pairing an existing STIHL motion with its line under a mono column head, 'Worth exploring'. The small print under the rows says these are ideas to explore, not results, at body size.",
     mock: {
       type: "motions",
-      header: "Pilot hypothesis",
+      header: "Worth exploring",
       items: [
         { motion: "On-site demos", test: "Demo Greyer on the same visit" },
         { motion: "Pro and fleet accounts", test: "Another reason to reach crew leads" },
@@ -516,85 +515,57 @@ export const SLIDES: Slide[] = [
       ],
     },
     notes:
-      "Why come to STIHL rather than sell around you? Because your dealers are already in this workday: demos on site, Pro accounts and fleet conversations, service and parts, and real investment in Spanish-speaking crews through NHLA and the green-industry scholarship. Greyer doesn't sell saws or replace the dealer. Each of these is a hypothesis the pilot can test, not a result.",
+      "Why come to STIHL rather than sell around you? Because your dealers are already in this workday: demos on site, Pro accounts and fleet conversations, service and parts, and real investment in Spanish-speaking crews through NHLA and the green-industry scholarship. Greyer doesn't sell saws or replace the dealer. Each of these is something to explore together, not a result.",
     small:
-      "Each line is a hypothesis for the pilot to test, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.",
+      "Each line is an idea to explore together, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.",
   },
   {
     n: 13,
-    id: "offer",
-    title: "Collaboration offer — One demo. One dealer cluster. A small pilot.",
+    id: "together",
+    title: "Ways to work together — open options",
     kind: "dark",
     chapter: 3,
-    takeaway: "The offer is three concrete pieces: a joint demo, 10 to 20 pilot kits, and a simple dealer service loop.",
+    takeaway: "There are several ways this could work, from a co-branded edition to white label to Alia on its own, and the shape is left open.",
     copy: {
-      kicker: "The offer",
-      headline: "One demo. One dealer cluster. A small pilot.",
+      kicker: "Ways to work together",
+      headline: "A few shapes this could take.",
     },
     visual:
-      "Light slide. Three equal white 12px cards in a row, each with a large mono numeral, a short title and one line. The clarifier sits under the cards at body size, not in small print.",
+      "Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the signal waveform), a short title and one line. The clarifier under the cards at body size, small print at the bottom.",
     mock: {
       type: "offer",
       items: [
-        { n: "01", title: "Joint jobsite demo", text: "With a Pro Dealer, on site." },
-        { n: "02", title: "10–20 pilot kits", text: "Cap plus ~90 days of Alia, by agreement." },
-        { n: "03", title: "Dealer service loop", text: "Spoken symptoms and serial → a reviewed dealer message." },
+        { n: "01", title: "Co-branded edition", text: "Greyer × STIHL cap, Alia inside.", art: "cap" },
+        { n: "02", title: "White label", text: "STIHL-branded cap and app, built on Greyer.", art: "wordmark" },
+        { n: "03", title: "Alia on its own", text: "The assistant, no cap needed.", art: "wave" },
       ],
-      clarifier: "No dealer-ticket integration assumed.",
+      clarifier: "Open to whatever shape fits. Nothing is agreed.",
     },
     notes:
-      "Here's the whole offer, in three pieces. A joint demo on a working site. Ten to twenty pilot kits: a cap and about ninety days of Alia each, with terms to be agreed. And a simple service loop: the lead says the symptoms and serial, Alia drafts the dealer message, and the lead approves it. No integration with dealer ticketing is assumed.",
-    small: "Kit count, access terms and costs are subject to agreement.",
+      "We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or STIHL could offer Alia on its own, without the cap. We're open to whichever shape fits your customers.",
+    small: "Options for discussion only. No terms, pricing or integration are assumed, and STIHL has not agreed to any of them.",
   },
   {
     n: 14,
-    id: "pilot",
-    title: "Pilot — 20 crew leads. Four weeks of measured use.",
+    id: "close",
+    title: "Close — Where would you like to start?",
     kind: "dark",
     chapter: 3,
-    takeaway: "A small pilot measures four things over a four-week window inside a roughly 90-day access period, against thresholds agreed in advance.",
+    takeaway: "The deck ends open: an invitation to choose where to start, with a jobsite demo on offer whenever it's useful.",
     copy: {
-      headline: "20 crew leads. Four weeks of measured use.",
+      kicker: "Where we'd like to go next",
+      headline: "Hands on the tool. Office in the cap.",
+      body: "Where would you like to start? We'd gladly show it on a jobsite, or talk through any of these shapes with your team.",
     },
     visual:
-      "Light slide. Top: one long bar for the roughly 90-day access period, with the four-week measurement window highlighted inside it and a short baseline marker before it. Middle: the cohort (20 crew leads, or a first 10) and the four trade chips. Bottom: four metric cards in mono. A line under them, at body size: thresholds agreed together before launch.",
-    mock: {
-      type: "pilot",
-      access: "~90-day access",
-      window: "4-week measurement window",
-      cohort: "One regional dealer cluster",
-      mix: ["Landscaping", "Building", "Arborist", "Paving"],
-      metrics: ["Approved drafts sent, where verifiable", "Notes captured", "Time: walkthrough → quote draft", "Time: schedule change → approved update"],
-      cadence: "Baseline, weekly check-ins, thresholds agreed before launch.",
-    },
+      "Bookends slide 1: the silk at full strength, the collab lockup, the anchor line and the open question on the left; on the right the concept crew-edition cap, floating and ringed by rotating text. A 'Concept render' tag.",
+    mock: { type: "brand", ring: "Where would you like to start · Hands on the tool · Office in the cap · ", tag: "Concept render", cap: "/media/cap-crew.webp" },
     notes:
-      "We'd measure, not guess. Twenty crew leads in one dealer cluster, across landscaping, building, arborist and paving. Access runs about ninety days, and the measured window is four weeks inside it, after a short baseline. We track four things where we can verify them, and check in weekly. We agree what success looks like together, before launch.",
-    small:
-      "The four weeks are measured inside the ~90-day access period. With only 10 kits, the pilot starts with a first cohort of 10. No analytics or message-delivery tracking is assumed; counts come from what can be verified with participants.",
+      "That's the picture. We'd rather leave this open than pin it down today. If it helps, we'll bring the cap to a jobsite and show it working with a real crew. Or we can start with a conversation about which shape fits your customers. So, where would you like to start?",
+    small: "A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer. Concept render; colours for discussion only.",
   },
   {
     n: 15,
-    id: "ask",
-    title: "Ask — Pick the dealer cluster. Put a demo on the calendar.",
-    kind: "dark",
-    chapter: 3,
-    takeaway: "The next step is concrete: an introduction, a named counterpart and a demo date, with the demo deciding the pilot.",
-    copy: {
-      kicker: "The ask",
-      headline: "Pick the dealer cluster. Put a demo on the calendar.",
-    },
-    visual:
-      "Dark graphite slide. Headline across the top. Three numbered asks below it in large Asta Sans, the third ending in a date field that reads [proposed date]. The gate line sits at the bottom in mono. No vision statement, no closing image.",
-    mock: {
-      type: "ask",
-      items: ["An introduction to Commercial Solutions or one regional Pro Dealer cluster", "A named STIHL or dealer counterpart", "A jobsite demo on [proposed date]"],
-      gate: "The demo decides whether the pilot goes ahead.",
-    },
-    notes:
-      "So here's the ask. Introduce us to Commercial Solutions or to one Pro Dealer cluster. Give us a named counterpart. And let's choose a date for a jobsite demo together. The demo is the gate. If it doesn't hold up on a real site, there's no pilot. If it does, we come back with the pilot plan and terms.",
-  },
-  {
-    n: 16,
     id: "appendix",
     title: "Appendix — Customer detail and operating boundaries",
     kind: "dark",
@@ -637,11 +608,11 @@ export const SLIDES: Slide[] = [
         { label: "Translation", text: "Voice in, then a draft in the other language. Not live two-way interpretation, and not certified translation." },
         { label: "Safety", text: "Not a safety system or PPE, and no replacement for a bilingual supervisor." },
         { label: "STIHL", text: "No STIHL integration, approval or partnership is assumed." },
-        { label: "Privacy", text: "A privacy and data-handling review is required before the pilot. Policies are not supplied here." },
+        { label: "Privacy", text: "A privacy and data-handling review is required before any rollout. Policies are not supplied here." },
       ],
     },
     notes:
-      "I'll leave this up for questions. On the left is the full customer list behind the sixty-four percent, grouped the same way. On the right are the boundaries we hold ourselves to: the lead approves every send, email is opt-in, translation is a draft to review, the cap is not PPE, nothing about STIHL is assumed, and privacy gets a review before any pilot.",
+      "I'll leave this up for questions. On the left is the full customer list behind the sixty-four percent, grouped the same way. On the right are the boundaries we hold ourselves to: the lead approves every send, email is opt-in, translation is a draft to review, the cap is not PPE, nothing about STIHL is assumed, and privacy gets a review before any rollout.",
     small: "Buyer roles include owners, presidents and founders. Customer details are supplied by Greyer and not independently verified.",
   },
 ];
@@ -656,11 +627,12 @@ export const QUESTIONS = {
     { q: "Does Alia send messages on its own?", a: "No. Alia drafts. The user reviews and approves every outbound message." },
     { q: "Is this live interpretation for the crew?", a: "No. The lead speaks, Alia drafts in the other language, and the lead reviews it. It is not live two-way interpretation and not certified translation." },
     { q: "Is the cap PPE?", a: "No. Greyer is not a safety system or PPE. Crews wear the protection the job requires, and nobody uses Alia while operating a tool." },
-    { q: "Does it work on Android?", a: "Greyer is an iOS app. The pilot would run with crew leads who use iPhones." },
+    { q: "Does it work on Android?", a: "Greyer is an iOS app, so crews would need iPhones." },
     { q: "Which channels does it use?", a: "In-app voice and text, iMessage and WhatsApp. Email drafting is opt-in." },
     { q: "Do your customers use STIHL?", a: "We don't know, and we don't claim it. The proof shows overlap with the segments your Pro Dealers serve, nothing more." },
-    { q: "What does STIHL commit to?", a: "An introduction, a named counterpart and a demo date. The pilot comes after the demo, on terms we agree together." },
-    { q: "How do we know the pilot worked?", a: "Four measures over a four-week window, against thresholds we agree before launch, with a weekly check-in." },
-    { q: "What about privacy and data?", a: "A privacy and data-handling review comes before the pilot. We aren't presenting policies today." },
+    { q: "What would STIHL be signing up for?", a: "Nothing today. We'd like to find the shape that fits first, then agree terms together." },
+    { q: "What would white label mean?", a: "A STIHL-branded edition of the cap and app, built on Greyer. Scope, terms and feasibility would be worked out together; nothing is assumed." },
+    { q: "Could STIHL offer Alia without the cap?", a: "That's one of the options. The cap is optional; Alia runs in the iOS app." },
+    { q: "What about privacy and data?", a: "A privacy and data-handling review comes before any rollout. We aren't presenting policies today." },
   ],
 };

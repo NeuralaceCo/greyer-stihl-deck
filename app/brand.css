@@ -20,7 +20,8 @@
 }
 
 .dk[data-at="title"] .gs-silk,
-.dk[data-at="vision"] .gs-silk {
+.dk[data-at="vision"] .gs-silk,
+.dk[data-at="close"] .gs-silk {
   opacity: 1;
 }
 
@@ -29,7 +30,8 @@
   transition: opacity 0.6s var(--ease-ui);
 }
 
-.dk[data-at="title"] .dk-top .gs-lockup {
+.dk[data-at="title"] .dk-top .gs-lockup,
+.dk[data-at="close"] .dk-top .gs-lockup {
   opacity: 0;
 }
 

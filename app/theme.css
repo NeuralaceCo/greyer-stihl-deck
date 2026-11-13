@@ -64,15 +64,6 @@
   color: var(--ink);
 }
 
-[data-kind="dark"] .gs-tl-window {
-  background: var(--stihl);
-  color: var(--graphite);
-}
-
-[data-kind="dark"] .gs-tl-base {
-  background-image: repeating-linear-gradient(135deg, transparent 0 8px, rgba(244, 242, 238, 0.12) 8px 9px);
-}
-
 /* Orange marks the figures and numerals that carry the argument. */
 [data-kind="dark"] .gs-stat,
 [data-kind="dark"] .gs-offer span,
@@ -82,11 +73,6 @@
 
 [data-kind="dark"] .gs-flow li[data-key="true"] {
   border-color: var(--stihl);
-}
-
-[data-kind="dark"] .gs-date {
-  border-color: var(--stihl);
-  color: var(--stihl);
 }
 
 [data-kind="dark"] .gs-photo {

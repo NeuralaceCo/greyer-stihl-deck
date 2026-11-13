@@ -20,8 +20,6 @@ function structured(m?: Mock): string[] {
     case "flow": return [...m.steps.flatMap((x) => [x.label, x.detail]), ...m.facts];
     case "motions": return [m.header, ...m.items.flatMap((x) => [x.motion, x.test])];
     case "offer": return [...m.items.flatMap((x) => [x.title, x.text]), m.clarifier];
-    case "pilot": return [m.access, m.window, m.cohort, ...m.mix, ...m.metrics, m.cadence];
-    case "ask": return [...m.items, m.gate];
     default: return [];
   }
 }
@@ -103,12 +101,13 @@ check(messaging < email, "messaging must come before email");
 const proof = SLIDES.find((s) => s.mock?.type === "proof");
 check(proof?.mock?.type === "proof" && proof.mock.stat === "64%" && proof.mock.of === "7 of 11" && proof.mock.names.length === 7, "proof slide must show 64%, 7 of 11 and seven names");
 
-/* 9. The pilot separates the 90-day access period from the four-week window; the main deck ends on the ask. */
-const pilot = SLIDES.find((s) => s.id === "pilot")!;
-const pilotText = strings(pilot).map((x) => x.text).join(" ");
-check(/90/.test(pilotText) && /(four weeks|4-week|four-week)/i.test(pilotText), "pilot must state both ~90 days and four weeks");
+/* 9. The ending stays open (the user's call over the brief's demo-and-pilot ask): the options slide offers more
+   than one shape and says nothing is agreed, and the main deck ends on the open close. */
+const together = SLIDES.find((s) => s.id === "together");
+check(together?.mock?.type === "offer" && together.mock.items.length >= 2 && /nothing is agreed/i.test(together.mock.clarifier), "options slide must offer several shapes and say nothing is agreed");
 const lastMain = SLIDES.filter((s) => s.id !== "appendix").at(-1)!;
-check(lastMain.id === "ask" && /\[proposed date\]/.test(strings(lastMain).map((x) => x.text).join(" ")), "main deck must end on the ask with a [proposed date]");
+check(lastMain.id === "close" && /\?/.test(lastMain.copy.body ?? ""), "main deck must end on the open close, with a question");
+check(!SLIDES.some((s) => /pilot/i.test(strings(s).map((x) => x.text).join(" "))), "the pilot is out of the deck: no slide may mention it");
 
 /* 10. Safety words never describe someone using Alia while cutting. */
 for (const x of all) if (/(while|during) (cutting|sawing|operating)/i.test(x.text)) check(/\b(not|never|no|nobody|isn't)\b/i.test(x.text), `#${x.n} ${x.where}: describes use while operating`);
@@ -191,13 +190,6 @@ function mockText(m: Mock): string {
     case "offer":
       m.items.forEach((x) => out.push(`- **${x.n} ${x.title}**: ${x.text}`));
       out.push("", `Clarifier: ${m.clarifier}`);
-      break;
-    case "pilot":
-      out.push(`- Access: ${m.access}`, `- Measurement: ${m.window}`, `- Cohort: ${m.cohort}`, `- Mix: ${m.mix.join(" · ")}`, `- Metrics:`, ...m.metrics.map((x) => `  - ${x}`), `- ${m.cadence}`);
-      break;
-    case "ask":
-      m.items.forEach((x, i) => out.push(`${i + 1}. ${x}`));
-      out.push("", `Gate: ${m.gate}`);
       break;
     case "appendix":
       m.groups.forEach((g) => out.push("", `**${g.title}**`, "", "| Buyer | Business |", "|---|---|", ...g.rows.map((r) => `| ${r.name} | ${r.business || "—"} |`)));

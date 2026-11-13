@@ -8,12 +8,12 @@ People in the mocks are fictional: Ryan (crew lead), Javier (crew), Karen Holt (
 
 ## 1. Title — Hands on the tool. Office in the cap.
 
-**Takeaway.** Greyer proposes a jobsite demo and a small crew-lead pilot, built around the cap and the crews STIHL already equips.
+**Takeaway.** Greyer proposes working together around the cap and the crews STIHL already equips, with the shape of it left open.
 
-**On-slide copy** (34 words)  
+**On-slide copy** (35 words)  
 Kicker: A proposal for STIHL Commercial Solutions  
 Headline: **Hands on the tool. Office in the cap.**  
-Body: Greyer's voice-first cap and app, around the crews STIHL already equips. A jobsite demo first, then a small crew-lead pilot.
+Body: Greyer's voice-first cap and app, around the crews STIHL already equips, and a few ways we could build on it together.
 
 **Visual direction.** Dark slide over a slow silk background: graphite folds with STIHL orange catching the light toward the lower right. Left: the collab lockup at display size (the greyer wordmark in white, a thin ×, STIHL in bold caps in STIHL orange with a sheen passing across it), its letters blurring into focus one by one; under it the anchor line and one line of body. Right: the Greyer cap rendered on graphite, floating gently and tilting toward the pointer, ringed by slowly rotating text. A 'Concept render' tag. STIHL is set as text in our type, not their logo.
 
@@ -23,7 +23,7 @@ Lockup: the greyer × STIHL
 Rotating ring text (decoration): “Hands on the tool · Office in the cap · Greyer × STIHL ·”
 Tag: Concept render
 
-**Speaker notes** (63 words). Thanks for the time. One idea today: the person whose hands are on your tools is also running the office for the job. Greyer gives them a voice-first way to handle the texts, notes and scheduling. STIHL stays the tool, the dealer, the service and the parts. We're asking for two things: a jobsite demo, then a small pilot with one dealer cluster.
+**Speaker notes** (63 words). Thanks for the time. One idea today: the person whose hands are on your tools is also running the office for the job. Greyer gives them a voice-first way to handle the texts, notes and scheduling. STIHL stays the tool, the dealer, the service and the parts. At the end we'll show a few shapes this could take, and leave the choice open.
 
 **Small print.** A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer. Concept render; colours for discussion only.
 
@@ -74,10 +74,10 @@ Body: Most of our substantial commercial buyers build, pave, paint, wire or heat
 
 **Takeaway.** STIHL's pro customer and Greyer's buyers meet in one person: the lead who works the job and also runs its office.
 
-**On-slide copy** (44 words)  
+**On-slide copy** (42 words)  
 Kicker: Shared customer  
 Headline: **The person running the crew is also running the office.**  
-Body: Greyer's commercial buyers today are owners, presidents and founders. The pilot tests the next step: the crew lead in the field.
+Body: Greyer's commercial buyers today are owners, presidents and founders. The next step is the crew lead in the field.
 
 **Visual direction.** Light slide. Headline across the top, the body under it on the left. Left: the four jobs as a numbered list (Tool work · Crew coordination · Homeowner updates · Dealer follow-up), each with a hairline running across to the photo. Right: a large photo of an owner-operator / crew lead with two crew members loading gear, every tool switched off. Caption under the photo in mono: Crew lead / owner-operator.
 
@@ -86,16 +86,16 @@ Body: Greyer's commercial buyers today are owners, presidents and founders. The 
 Centre caption: Crew lead / owner-operator
 Labels around the photo: Tool work · Crew coordination · Homeowner updates · Dealer follow-up
 
-**Speaker notes** (58 words). On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's exactly what the pilot would test.
+**Speaker notes** (61 words). On a small crew, the owner is the crew lead. On bigger crews they're two people with the same problem: hands on the work, and a phone full of things to answer. Greyer's commercial buyers today are mostly owners, presidents and founders. We are not claiming crew leads already use Greyer. That's the next step we'd like to explore with you.
 
 ## 5. Proof — 7 of 11 substantial commercial buyers are construction-related
 
 **Takeaway.** Most of Greyer's substantial commercial buyers are building, sitework, energy or utility firms, which overlaps with the construction and utility customers STIHL serves through Pro Dealers.
 
-**On-slide copy** (38 words)  
+**On-slide copy** (35 words)  
 Kicker: Proof of overlap  
 Headline: **7 of 11 substantial commercial buyers are construction-related.**  
-Body: Building trades, sitework, building energy and utility work. STIHL serves construction and utilities through Pro Dealers. This is overlap, not proof of STIHL use or pilot results.
+Body: Building trades, sitework, building energy and utility work. STIHL serves construction and utilities through Pro Dealers. This is overlap, not proof of STIHL use.
 
 **Visual direction.** Light slide, type only. Left: 64% at the largest size on the deck, with 7 of 11 under it in Geist Mono. Right: the seven buyers as text wordmarks in Asta Sans, each with its business in mono beneath, in a two-column list on white 12px cards. No customer logos. The footnote sits under the stat at a readable size.
 
@@ -113,7 +113,7 @@ Stat: **64%** · 7 of 11
 | Ener.co | HVAC / building energy |
 | HES EnergyNet | Electric utility |
 
-**Speaker notes** (58 words). Of Greyer's eleven substantial commercial buyers, seven are construction, building, sitework or utility firms. That's sixty-four percent. These are operating companies, not teachers, newspapers or solo brands. To be clear about what this shows: overlap with the construction and utility customers your Pro Dealers serve. It doesn't show these firms use STIHL, and it isn't a pilot result.
+**Speaker notes** (52 words). Of Greyer's eleven substantial commercial buyers, seven are construction, building, sitework or utility firms. That's sixty-four percent. These are operating companies, not teachers, newspapers or solo brands. To be clear about what this shows: overlap with the construction and utility customers your Pro Dealers serve. It doesn't show these firms use STIHL.
 
 **Small print.** Base: 11 substantial commercial buyers, meaning operating firms, excluding teachers, newspapers and solo brands. Customer details are supplied by Greyer and not independently verified.
 
@@ -319,95 +319,70 @@ Legend: Proposed (dashed) · Approved by the lead (green) · Requested (outline 
 
 ## 12. Why STIHL — The dealer already sits inside this workday
 
-**Takeaway.** Greyer fits around motions STIHL dealers already run, and each fit is a hypothesis the pilot can test.
+**Takeaway.** Greyer fits around motions STIHL dealers already run, and each fit is worth exploring together, not a claimed result.
 
 **On-slide copy** (42 words)  
 Kicker: Why STIHL  
 Headline: **The dealer already sits inside this workday.**
 
-**Visual direction.** Light slide. Left: a photo of a generic outdoor-power-equipment dealer counter (unbranded, no STIHL logos or orange-and-white products), with a crew lead and a counter person talking. Right: four rows, each pairing an existing STIHL motion with its line under a mono column head, 'Pilot hypothesis'. The small print under the rows says these are hypotheses, not results, at body size.
+**Visual direction.** Light slide. Left: a photo of a generic outdoor-power-equipment dealer counter (unbranded, no STIHL logos or orange-and-white products), with a crew lead and a counter person talking. Right: four rows, each pairing an existing STIHL motion with its line under a mono column head, 'Worth exploring'. The small print under the rows says these are ideas to explore, not results, at body size.
 
 **Structured on-slide content**
 
-Column head: Pilot hypothesis
+Column head: Worth exploring
 - **On-site demos** → Demo Greyer on the same visit
 - **Pro and fleet accounts** → Another reason to reach crew leads
 - **Service and parts** → Clearer requests from the field
 - **Spanish-speaking crews** → Bilingual drafts, lead-approved
 
-**Speaker notes** (61 words). Why come to STIHL rather than sell around you? Because your dealers are already in this workday: demos on site, Pro accounts and fleet conversations, service and parts, and real investment in Spanish-speaking crews through NHLA and the green-industry scholarship. Greyer doesn't sell saws or replace the dealer. Each of these is a hypothesis the pilot can test, not a result.
+**Speaker notes** (59 words). Why come to STIHL rather than sell around you? Because your dealers are already in this workday: demos on site, Pro accounts and fleet conversations, service and parts, and real investment in Spanish-speaking crews through NHLA and the green-industry scholarship. Greyer doesn't sell saws or replace the dealer. Each of these is something to explore together, not a result.
 
-**Small print.** Each line is a hypothesis for the pilot to test, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.
+**Small print.** Each line is an idea to explore together, not a result. Greyer doesn't sell saws or replace the dealer. STIHL facts are as supplied to Greyer; no STIHL approval, integration or distribution is implied.
 
-## 13. Collaboration offer — One demo. One dealer cluster. A small pilot.
+## 13. Ways to work together — open options
 
-**Takeaway.** The offer is three concrete pieces: a joint demo, 10 to 20 pilot kits, and a simple dealer service loop.
-
-**On-slide copy** (45 words)  
-Kicker: The offer  
-Headline: **One demo. One dealer cluster. A small pilot.**
-
-**Visual direction.** Light slide. Three equal white 12px cards in a row, each with a large mono numeral, a short title and one line. The clarifier sits under the cards at body size, not in small print.
-
-**Structured on-slide content**
-
-- **01 Joint jobsite demo**: With a Pro Dealer, on site.
-- **02 10–20 pilot kits**: Cap plus ~90 days of Alia, by agreement.
-- **03 Dealer service loop**: Spoken symptoms and serial → a reviewed dealer message.
-
-Clarifier: No dealer-ticket integration assumed.
-
-**Speaker notes** (62 words). Here's the whole offer, in three pieces. A joint demo on a working site. Ten to twenty pilot kits: a cap and about ninety days of Alia each, with terms to be agreed. And a simple service loop: the lead says the symptoms and serial, Alia drafts the dealer message, and the lead approves it. No integration with dealer ticketing is assumed.
-
-**Small print.** Kit count, access terms and costs are subject to agreement.
-
-## 14. Pilot — 20 crew leads. Four weeks of measured use.
-
-**Takeaway.** A small pilot measures four things over a four-week window inside a roughly 90-day access period, against thresholds agreed in advance.
-
-**On-slide copy** (44 words)  
-Headline: **20 crew leads. Four weeks of measured use.**
-
-**Visual direction.** Light slide. Top: one long bar for the roughly 90-day access period, with the four-week measurement window highlighted inside it and a short baseline marker before it. Middle: the cohort (20 crew leads, or a first 10) and the four trade chips. Bottom: four metric cards in mono. A line under them, at body size: thresholds agreed together before launch.
-
-**Structured on-slide content**
-
-- Access: ~90-day access
-- Measurement: 4-week measurement window
-- Cohort: One regional dealer cluster
-- Mix: Landscaping · Building · Arborist · Paving
-- Metrics:
-  - Approved drafts sent, where verifiable
-  - Notes captured
-  - Time: walkthrough → quote draft
-  - Time: schedule change → approved update
-- Baseline, weekly check-ins, thresholds agreed before launch.
-
-**Speaker notes** (57 words). We'd measure, not guess. Twenty crew leads in one dealer cluster, across landscaping, building, arborist and paving. Access runs about ninety days, and the measured window is four weeks inside it, after a short baseline. We track four things where we can verify them, and check in weekly. We agree what success looks like together, before launch.
-
-**Small print.** The four weeks are measured inside the ~90-day access period. With only 10 kits, the pilot starts with a first cohort of 10. No analytics or message-delivery tracking is assumed; counts come from what can be verified with participants.
-
-## 15. Ask — Pick the dealer cluster. Put a demo on the calendar.
-
-**Takeaway.** The next step is concrete: an introduction, a named counterpart and a demo date, with the demo deciding the pilot.
+**Takeaway.** There are several ways this could work, from a co-branded edition to white label to Alia on its own, and the shape is left open.
 
 **On-slide copy** (43 words)  
-Kicker: The ask  
-Headline: **Pick the dealer cluster. Put a demo on the calendar.**
+Kicker: Ways to work together  
+Headline: **A few shapes this could take.**
 
-**Visual direction.** Dark graphite slide. Headline across the top. Three numbered asks below it in large Asta Sans, the third ending in a date field that reads [proposed date]. The gate line sits at the bottom in mono. No vision statement, no closing image.
+**Visual direction.** Dark slide on the silk. Headline top left. Three equal cards in a row, each with a large orange mono numeral, a small picture (the crew-edition cap; STIHL as an orange wordmark; the signal waveform), a short title and one line. The clarifier under the cards at body size, small print at the bottom.
 
 **Structured on-slide content**
 
-1. An introduction to Commercial Solutions or one regional Pro Dealer cluster
-2. A named STIHL or dealer counterpart
-3. A jobsite demo on [proposed date]
+- **01 Co-branded edition**: Greyer × STIHL cap, Alia inside.
+- **02 White label**: STIHL-branded cap and app, built on Greyer.
+- **03 Alia on its own**: The assistant, no cap needed.
 
-Gate: The demo decides whether the pilot goes ahead.
+Clarifier: Open to whatever shape fits. Nothing is agreed.
 
-**Speaker notes** (59 words). So here's the ask. Introduce us to Commercial Solutions or to one Pro Dealer cluster. Give us a named counterpart. And let's choose a date for a jobsite demo together. The demo is the gate. If it doesn't hold up on a real site, there's no pilot. If it does, we come back with the pilot plan and terms.
+**Speaker notes** (57 words). We don't want to lock this into one shape today. It could be a co-branded crew edition, like the one you saw at the start. It could be white label: a STIHL-branded cap and app, built on Greyer. Or STIHL could offer Alia on its own, without the cap. We're open to whichever shape fits your customers.
 
-## 16. Appendix — Customer detail and operating boundaries
+**Small print.** Options for discussion only. No terms, pricing or integration are assumed, and STIHL has not agreed to any of them.
+
+## 14. Close — Where would you like to start?
+
+**Takeaway.** The deck ends open: an invitation to choose where to start, with a jobsite demo on offer whenever it's useful.
+
+**On-slide copy** (37 words)  
+Kicker: Where we'd like to go next  
+Headline: **Hands on the tool. Office in the cap.**  
+Body: Where would you like to start? We'd gladly show it on a jobsite, or talk through any of these shapes with your team.
+
+**Visual direction.** Bookends slide 1: the silk at full strength, the collab lockup, the anchor line and the open question on the left; on the right the concept crew-edition cap, floating and ringed by rotating text. A 'Concept render' tag.
+
+**Structured on-slide content**
+
+Lockup: the greyer × STIHL
+Rotating ring text (decoration): “Where would you like to start · Hands on the tool · Office in the cap ·”
+Tag: Concept render
+
+**Speaker notes** (51 words). That's the picture. We'd rather leave this open than pin it down today. If it helps, we'll bring the cap to a jobsite and show it working with a real crew. Or we can start with a conversation about which shape fits your customers. So, where would you like to start?
+
+**Small print.** A proposed collaboration. STIHL has not approved, endorsed or agreed to distribute Greyer. Concept render; colours for discussion only.
+
+## 15. Appendix — Customer detail and operating boundaries
 
 **Takeaway.** The detail behind the proof slide, and the limits Greyer works within.
 
@@ -447,9 +422,9 @@ Headline: **Customer detail and operating boundaries**
 - **Translation**: Voice in, then a draft in the other language. Not live two-way interpretation, and not certified translation.
 - **Safety**: Not a safety system or PPE, and no replacement for a bilingual supervisor.
 - **STIHL**: No STIHL integration, approval or partnership is assumed.
-- **Privacy**: A privacy and data-handling review is required before the pilot. Policies are not supplied here.
+- **Privacy**: A privacy and data-handling review is required before any rollout. Policies are not supplied here.
 
-**Speaker notes** (64 words). I'll leave this up for questions. On the left is the full customer list behind the sixty-four percent, grouped the same way. On the right are the boundaries we hold ourselves to: the lead approves every send, email is opt-in, translation is a draft to review, the cap is not PPE, nothing about STIHL is assumed, and privacy gets a review before any pilot.
+**Speaker notes** (64 words). I'll leave this up for questions. On the left is the full customer list behind the sixty-four percent, grouped the same way. On the right are the boundaries we hold ourselves to: the lead approves every send, email is opt-in, translation is a draft to review, the cap is not PPE, nothing about STIHL is assumed, and privacy gets a review before any rollout.
 
 **Small print.** Buyer roles include owners, presidents and founders. Customer details are supplied by Greyer and not independently verified.
 
@@ -461,12 +436,13 @@ Headline: **Customer detail and operating boundaries**
 - **Does Alia send messages on its own?** No. Alia drafts. The user reviews and approves every outbound message.
 - **Is this live interpretation for the crew?** No. The lead speaks, Alia drafts in the other language, and the lead reviews it. It is not live two-way interpretation and not certified translation.
 - **Is the cap PPE?** No. Greyer is not a safety system or PPE. Crews wear the protection the job requires, and nobody uses Alia while operating a tool.
-- **Does it work on Android?** Greyer is an iOS app. The pilot would run with crew leads who use iPhones.
+- **Does it work on Android?** Greyer is an iOS app, so crews would need iPhones.
 - **Which channels does it use?** In-app voice and text, iMessage and WhatsApp. Email drafting is opt-in.
 - **Do your customers use STIHL?** We don't know, and we don't claim it. The proof shows overlap with the segments your Pro Dealers serve, nothing more.
-- **What does STIHL commit to?** An introduction, a named counterpart and a demo date. The pilot comes after the demo, on terms we agree together.
-- **How do we know the pilot worked?** Four measures over a four-week window, against thresholds we agree before launch, with a weekly check-in.
-- **What about privacy and data?** A privacy and data-handling review comes before the pilot. We aren't presenting policies today.
+- **What would STIHL be signing up for?** Nothing today. We'd like to find the shape that fits first, then agree terms together.
+- **What would white label mean?** A STIHL-branded edition of the cap and app, built on Greyer. Scope, terms and feasibility would be worked out together; nothing is assumed.
+- **Could STIHL offer Alia without the cap?** That's one of the options. The cap is optional; Alia runs in the iOS app.
+- **What about privacy and data?** A privacy and data-handling review comes before any rollout. We aren't presenting policies today.
 
 ---
 
@@ -485,14 +461,13 @@ Headline: **Customer detail and operating boundaries**
 - [ ] What approval looks like in the real app (a tap, a spoken yes, a name and time). Match the mocks to it or relabel them.
 - [ ] How a request starts on the cap. The deck doesn't show it, but the demo narration will need it.
 
-### Pilot terms
+### Commercial options (slide 13)
 
-- [ ] Kit count: 10 or 20. With 10, the deck already describes a first cohort of 10.
-- [ ] About 90 days of access: terms, cost, and who pays for kits and access.
-- [ ] Every participant needs an iPhone, since Greyer is iOS only.
-- [ ] Cap sizes and colours for the kits.
-- [ ] Which dealer cluster, and who at Greyer runs the weekly check-ins.
-- [ ] What happens to kits and accounts when the pilot ends.
+- [ ] Co-branded edition: STIHL's approval of the colourway and lockup, who makes and sells a crew-edition cap, and the terms.
+- [ ] White label: what a STIHL-branded cap and app would take (branding, app listing, support) and whether Greyer can offer it.
+- [ ] Alia on its own: how STIHL would offer the app without the cap, and pricing.
+- [ ] Every user needs an iPhone, since Greyer is iOS only.
+- [ ] Who supports crews day to day under each option.
 
 ### Assets and permissions
 
@@ -503,20 +478,12 @@ Headline: **Customer detail and operating boundaries**
 - [ ] Slides 1–2 use STIHL orange on a concept crew-edition cap and in the lockup for this draft, labelled as a concept render and not a STIHL product. Confirm Greyer is comfortable showing it before STIHL has seen it; the real STIHL logo is not used.
 - [ ] No STIHL logo, photos or typeface without STIHL's written OK. If STIHL supplies brand assets, the real logo can replace the text wordmark.
 
-### Measurement
-
-- [ ] Baseline method before access starts (for example, a week of participant-reported counts and cycle times).
-- [ ] How "user-approved drafts sent" is counted where verifiable: app records the participant agrees to share, or self-report.
-- [ ] How the two cycle times are timed: walkthrough to quote draft, and schedule change to approved update.
-- [ ] Success thresholds, agreed with STIHL before launch.
-- [ ] Who owns the pilot data, and what STIHL and the dealer see (aggregate only?).
-
 ### Privacy
 
-- [ ] A data-handling review before the pilot. No policies are presented in the deck.
+- [ ] A data-handling review before any rollout. No policies are presented in the deck.
 - [ ] Crew and homeowner messages pass through Alia: notice and consent, in Spanish for Spanish-speaking crews.
-- [ ] Voice capture and recording-consent rules in the pilot's state or states.
-- [ ] Retention and deletion at the end of the pilot.
+- [ ] Voice capture and recording-consent rules in each state where crews would use it.
+- [ ] Retention and deletion terms under each option, and who owns the data and what STIHL sees.
 
 ### Language and safety
 
